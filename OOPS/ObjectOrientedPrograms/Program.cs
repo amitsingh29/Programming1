@@ -23,6 +23,11 @@ namespace ObjectOrientedPrograms
                     DeckRandom deck = new DeckRandom();
                     deck.initialize();
                     break;
+                case 4:
+                    StockPortfolio stock = new StockPortfolio();
+                    stock.check();
+                    break;
+
             }   
         }
     }
