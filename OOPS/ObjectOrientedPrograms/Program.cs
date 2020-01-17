@@ -19,7 +19,10 @@ namespace ObjectOrientedPrograms
                     RegularExpression regularExpression = new RegularExpression();
                     regularExpression.stringReplace();
                     break;
-
+                case 3:
+                    DeckRandom deck = new DeckRandom();
+                    deck.initialize();
+                    break;
             }   
         }
     }
