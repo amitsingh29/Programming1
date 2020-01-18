@@ -8,6 +8,9 @@ namespace ObjectOrientedPrograms
 {
     public class InventoryDataManagement
     {
+        /// <summary>
+        /// Detailses this instance.
+        /// </summary>
         public void details()
         {
             Inventory inventory = JsonConvert.DeserializeObject<Inventory>(File.ReadAllText(@"C:\Users\ye10397\Desktop\Amit\Programming1\OOPS\ObjectOrientedPrograms\InventoryManagement\InventoryDetails.json"));
