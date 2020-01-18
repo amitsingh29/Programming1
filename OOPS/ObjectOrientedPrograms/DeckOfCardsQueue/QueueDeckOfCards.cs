@@ -75,9 +75,9 @@ namespace ObjectOrientedPrograms.DeckOfCardsQueue
         }
 
         /// <summary>
-        /// 
+        /// Shuffles the specified arr.
         /// </summary>
-        /// <param name="arr"></param>
+        /// <param name="arr">The arr.</param>
         public static void Shuffle(string[,] arr)
         {  
             Random r1 = new Random();
