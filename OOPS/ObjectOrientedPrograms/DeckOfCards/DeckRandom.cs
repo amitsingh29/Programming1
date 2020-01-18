@@ -12,9 +12,9 @@ namespace ObjectOrientedPrograms
 
         public int k = 0;
 
-        /// <summary>
-        /// Initializes this instance.
-        /// </summary>
+       /// <summary>
+       /// 
+       /// </summary>
         public void initialize()
         {
 
