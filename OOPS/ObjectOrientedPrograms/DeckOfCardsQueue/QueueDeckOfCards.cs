@@ -7,7 +7,7 @@ namespace ObjectOrientedPrograms.DeckOfCardsQueue
     class QueueDeckOfCards
     {
         /// <summary>
-        /// 
+        /// Cards the in queue.
         /// </summary>
         public static void CardInQueue()
         {
