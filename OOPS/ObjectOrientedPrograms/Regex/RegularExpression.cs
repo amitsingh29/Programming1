@@ -7,7 +7,7 @@ namespace ObjectOrientedPrograms
     class RegularExpression
     {
         /// <summary>
-        /// Strings the replace.
+        /// 
         /// </summary>
         public void stringReplace()
         {
