@@ -27,7 +27,7 @@ namespace ObjectOrientedPrograms
             return d;
         }
 
-        internal void AddressList(AddressBookModel a)
+        internal void Address(AddressBookModel a)
         {
             throw new NotImplementedException();
         }

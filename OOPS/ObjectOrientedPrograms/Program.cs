@@ -8,6 +8,12 @@ namespace ObjectOrientedPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a number");
+            Console.WriteLine("Enter 1 for Inventory Data Management ");
+            Console.WriteLine("Enter 2 for Regex");
+            Console.WriteLine("Enter 3 for Deck Of Cards");
+            Console.WriteLine("Enter 4 for Deck Of Cards Queue");
+            Console.WriteLine("Enter 5 for Stock Report");
+            Console.WriteLine("Enter 6 for Address Book");
             int n = Convert.ToInt32(Console.ReadLine());
             switch(n)
             {
@@ -26,6 +32,14 @@ namespace ObjectOrientedPrograms
                 case 4:
                     StockPortfolio stock = new StockPortfolio();
                     stock.check();
+                    break;
+                case 5:
+                    
+                    break;
+                case 6:
+                    QueueDeckOfCards queueDeck = new QueueDeckOfCards();
+                    queueDeck.CardInQueue();
+
                     break;
 
             }   
