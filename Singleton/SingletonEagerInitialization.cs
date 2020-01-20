@@ -11,6 +11,10 @@ namespace DesignPattern.Singleton
         {
 
         }
+        /// <summary>
+        /// Gets the singleton.
+        /// </summary>
+        /// <returns></returns>
         public static SingletonEagerInitialization GetSingleton()
         {
             return initialization;
