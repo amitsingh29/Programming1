@@ -1,0 +1,11 @@
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.csprojAssemblyReference.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.AssemblyInfoInputs.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.AssemblyInfo.cs
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.exe
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.deps.json
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.runtimeconfig.json
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.runtimeconfig.dev.json
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.dll
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\bin\Debug\netcoreapp3.1\DesignPattern.pdb
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.dll
+C:\Users\ye10397\Desktop\Amit\Programming1\DesignPattern\DesignPattern\obj\Debug\netcoreapp3.1\DesignPattern.pdb
