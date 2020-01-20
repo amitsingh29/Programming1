@@ -11,6 +11,10 @@ namespace DesignPattern.Singleton
         {
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public static LazyInitialization GetObj()
         {
                 if (obj == null)
