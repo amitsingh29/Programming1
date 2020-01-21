@@ -24,6 +24,9 @@ namespace DesignPattern
                     DataBaseExecutor nonAdminExecutor = new DatabaseExecutorProxy("non-admin","Admin@123");
                     DataBaseExecutor adminExecutor = new DatabaseExecutorProxy("admin", "Admin@123");
                     break;
+
+                case 3:
+                    break;
             }
         }
     }

@@ -1,13 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="ThreadSafeSingleton.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------
 
 namespace DesignPattern.Singleton
 {
-    class ThreadSafeSingleton
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// Thread class
+    /// </summary>
+    public class ThreadSafeSingleton
     {
-        private static ThreadSafeSingleton obj;
-        private static object obj1=new object();
+        /// <summary>
+        /// The instance
+        /// </summary>
+        private static ThreadSafeSingleton instance;
+
+        /// <summary>
+        /// The lock object
+        /// </summary>
+        private static object lockObject = new object();
 
         /// <summary>
         /// Prevents a default instance of the <see cref="ThreadSafeSingleton"/> class from being created.
@@ -16,17 +33,25 @@ namespace DesignPattern.Singleton
         {
             Console.WriteLine("Instance created");
         }
-        public static ThreadSafeSingleton GetObj
+
+        /// <summary>
+        /// Gets the get instance.
+        /// </summary>
+        /// <value>
+        /// The get instance.
+        /// </value>
+        public static ThreadSafeSingleton GetInstance
         {
             get
             {
-               lock(obj1)
+                lock (lockObject)
                 {
-                    if (obj == null)
+                    if (instance == null)
                     {
-                        obj = new ThreadSafeSingleton();
+                        instance = new ThreadSafeSingleton();
                     }
-                    return obj;
+
+                    return instance;
                 }
             }   
         }
