@@ -1,4 +1,5 @@
 ﻿using DesignPattern.FactoryPattern;
+using DesignPattern.StructuralDesignPattern.ProxyDesignPattern;
 using System;
 
 namespace DesignPattern
@@ -18,6 +19,10 @@ namespace DesignPattern
                     CFactory server = factory.GetComputer("Server");
                     server.functionality("500","10000","Ubuntu");
                     Console.ReadKey();
+                    break;
+                case 2:
+                    DataBaseExecutor nonAdminExecutor = new DatabaseExecutorProxy("non-admin","Admin@123");
+                    DataBaseExecutor adminExecutor = new DatabaseExecutorProxy("admin", "Admin@123");
                     break;
             }
         }
