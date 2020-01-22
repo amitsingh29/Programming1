@@ -3,7 +3,7 @@
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
-//-----------------------------------------------------------------------using System;
+//-----------------------------------------------------------------------
 
 namespace DesignPattern.StructuralDesignPattern.AdapterDesignPattern
 {

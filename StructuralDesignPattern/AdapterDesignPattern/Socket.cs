@@ -3,13 +3,8 @@
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
-//-----------------------------------------------------------------------using System;
 //-----------------------------------------------------------------------
-// <copyright file="Server.cs" company="BridgeLabz">
-//     Copyright © 2020 Company="BridgeLabz"
-// </copyright>
-// <creator name="Amit Singh"/>
-//-----------------------------------------------------------------------using System;
+
 namespace DesignPattern.StructuralDesignPattern.AdapterDesignPattern
 {
     using System;
