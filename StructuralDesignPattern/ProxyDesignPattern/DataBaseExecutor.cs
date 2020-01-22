@@ -1,6 +1,5 @@
-﻿
-//-----------------------------------------------------------------------
-// <copyright file="ThreadSafeSingleton.cs" company="BridgeLabz">
+﻿//-----------------------------------------------------------------------
+// <copyright file="DataBaseExecutor.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -12,6 +11,9 @@ namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
     using System.Collections.Generic;
     using System.Text;
 
+    /// <summary>
+    /// DataBaseExecutor Interface
+    /// </summary>
     public interface DataBaseExecutor
     {
         /// <summary>

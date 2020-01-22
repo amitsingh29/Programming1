@@ -23,60 +23,6 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <sourcecode name="DataBaseExecutor.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020-01-13 13:20:17.235</styleCop>
-      <settingsFile>2020-01-13 13:20:17.199</settingsFile>
-      <sourceFile>2020-01-21 18:34:55.545</sourceFile>
-      <parser>2020-01-13 13:20:17.235</parser>
-      <StyleCop.CSharp.DocumentationRules>2020-01-13 13:20:17.235</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>1653216457</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020-01-13 13:20:17.235</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileHeaderFileNameDocumentationMustMatchFileName" ruleCheckId="SA1638">
-        <context>The file attribute in the file header's copyright tag must contain the name of the file.</context>
-        <line>2</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileHeaderFileNameDocumentationMustMatchTypeName" ruleCheckId="SA1649">
-        <context>The file attribute in the file header's copyright tag must contain the name of the first type in the file and can be any of these: "DataBaseExecutor"</context>
-        <line>2</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtStartOfFile" ruleCheckId="SA1517">
-        <context>The code must not contain blank lines at the start of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The interface must have a documentation header.</context>
-        <line>15</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="InterfaceNamesMustBeginWithI" ruleCheckId="SA1302">
-        <context>Interface names must start with the capital letter 'I': DataBaseExecutor.</context>
-        <line>15</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
-        <context>method names begin with an upper-case letter: executeDatabase.</context>
-        <line>21</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
   <sourcecode name="LazyInitialization.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020-01-13 13:20:17.235</styleCop>
@@ -199,60 +145,6 @@
       <violation namespace="StyleCop.CSharp.NamingRules" rule="ElementMustBeginWithUpperCaseLetter" ruleCheckId="SA1300">
         <context>method names begin with an upper-case letter: functionality.</context>
         <line>54</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
-  <sourcecode name="DataBaseImpl.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2020-01-13 13:20:17.235</styleCop>
-      <settingsFile>2020-01-13 13:20:17.199</settingsFile>
-      <sourceFile>2020-01-22 10:35:32.832</sourceFile>
-      <parser>2020-01-13 13:20:17.235</parser>
-      <StyleCop.CSharp.DocumentationRules>2020-01-13 13:20:17.235</StyleCop.CSharp.DocumentationRules>
-      <StyleCop.CSharp.DocumentationRules.FilesHashCode>1653216457</StyleCop.CSharp.DocumentationRules.FilesHashCode>
-      <StyleCop.CSharp.LayoutRules>2020-01-13 13:20:17.235</StyleCop.CSharp.LayoutRules>
-      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
-      <StyleCop.CSharp.MaintainabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.MaintainabilityRules>
-      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
-      <StyleCop.CSharp.NamingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.NamingRules>
-      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
-      <StyleCop.CSharp.OrderingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.OrderingRules>
-      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
-      <StyleCop.CSharp.ReadabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.ReadabilityRules>
-      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
-      <StyleCop.CSharp.SpacingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.SpacingRules>
-      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
-    </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileHeaderFileNameDocumentationMustMatchFileName" ruleCheckId="SA1638">
-        <context>The file attribute in the file header's copyright tag must contain the name of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileHeaderFileNameDocumentationMustMatchTypeName" ruleCheckId="SA1649">
-        <context>The file attribute in the file header's copyright tag must contain the name of the first type in the file and can be any of these: "DataBaseImpl"</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="DocumentationHeadersMustNotContainBlankLines" ruleCheckId="SA1644">
-        <context>The documentation header must not contain blank lines. Use the 'para' tag to insert line breaks within documentation text.</context>
-        <line>14</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementDocumentationMustHaveSummaryText" ruleCheckId="SA1606">
-        <context>The summary section in the documentation header must not be empty.</context>
-        <line>17</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementsMustBeSeparatedByBlankLine" ruleCheckId="SA1516">
-        <context>Adjacent elements must be separated by a blank line.</context>
-        <line>17</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ElementDocumentationHeaderMustBePrecededByBlankLine" ruleCheckId="SA1514">
-        <context>A documentation header must be preceded by a blank line or must be the first item in its scope.</context>
-        <line>13</line>
         <warning>False</warning>
       </violation>
     </violations>
@@ -891,10 +783,6 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="-1297915908">
-    <configuration>
-    </configuration>
-  </project>
   <sourcecode name="ISocketAdapter.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020-01-13 13:20:17.235</styleCop>
@@ -933,5 +821,189 @@
         <warning>False</warning>
       </violation>
     </violations>
+  </sourcecode>
+  <sourcecode name="DatabaseExecutorProxy.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020-01-13 13:20:17.235</styleCop>
+      <settingsFile>2020-01-13 13:20:17.199</settingsFile>
+      <sourceFile>2020-01-22 12:51:17.741</sourceFile>
+      <parser>2020-01-13 13:20:17.235</parser>
+      <StyleCop.CSharp.DocumentationRules>2020-01-13 13:20:17.235</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>1653216457</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020-01-13 13:20:17.235</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="FieldsMustBePrivate" ruleCheckId="SA1401">
+        <context>Fields must be declared with private access. Use properties to expose fields.</context>
+        <line>23</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to isAdmin must begin with the 'this.', 'base.', 'object.' or 'DatabaseExecutorProxy.' or 'DataBaseExecutor.' prefix to indicate the intended method call. </context>
+        <line>60</line>
+        <index>1860</index>
+        <endIndex>1866</endIndex>
+        <startLine>60</startLine>
+        <startColumn>17</startColumn>
+        <endLine>60</endLine>
+        <endColumn>23</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to DataBaseExecuter must begin with the 'this.', 'base.', 'object.' or 'DatabaseExecutorProxy.' or 'DataBaseExecutor.' prefix to indicate the intended method call. </context>
+        <line>61</line>
+        <index>1893</index>
+        <endIndex>1908</endIndex>
+        <startLine>61</startLine>
+        <startColumn>17</startColumn>
+        <endLine>61</endLine>
+        <endColumn>32</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to DataBaseExecuter must begin with the 'this.', 'base.', 'object.' or 'DatabaseExecutorProxy.' or 'DataBaseExecutor.' prefix to indicate the intended method call. </context>
+        <line>74</line>
+        <index>2306</index>
+        <endIndex>2321</endIndex>
+        <startLine>74</startLine>
+        <startColumn>17</startColumn>
+        <endLine>74</endLine>
+        <endColumn>32</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to isAdmin must begin with the 'this.', 'base.', 'object.' or 'DatabaseExecutorProxy.' or 'DataBaseExecutor.' prefix to indicate the intended method call. </context>
+        <line>72</line>
+        <index>2265</index>
+        <endIndex>2271</endIndex>
+        <startLine>72</startLine>
+        <startColumn>17</startColumn>
+        <endLine>72</endLine>
+        <endColumn>23</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixCallsCorrectly" ruleCheckId="SA1126">
+        <context>The call to DataBaseExecuter must begin with the 'this.', 'base.', 'object.' or 'DatabaseExecutorProxy.' or 'DataBaseExecutor.' prefix to indicate the intended method call. </context>
+        <line>84</line>
+        <index>2630</index>
+        <endIndex>2645</endIndex>
+        <startLine>84</startLine>
+        <startColumn>21</startColumn>
+        <endLine>84</endLine>
+        <endColumn>36</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="DataBaseExecutor.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020-01-13 13:20:17.235</styleCop>
+      <settingsFile>2020-01-13 13:20:17.199</settingsFile>
+      <sourceFile>2020-01-22 12:52:23.499</sourceFile>
+      <parser>2020-01-13 13:20:17.235</parser>
+      <StyleCop.CSharp.DocumentationRules>2020-01-13 13:20:17.235</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>1653216457</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020-01-13 13:20:17.235</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.NamingRules" rule="InterfaceNamesMustBeginWithI" ruleCheckId="SA1302">
+        <context>Interface names must start with the capital letter 'I': DataBaseExecutor.</context>
+        <line>17</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="DataBaseImpl.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020-01-13 13:20:17.235</styleCop>
+      <settingsFile>2020-01-13 13:20:17.199</settingsFile>
+      <sourceFile>2020-01-22 12:54:03.963</sourceFile>
+      <parser>2020-01-13 13:20:17.235</parser>
+      <StyleCop.CSharp.DocumentationRules>2020-01-13 13:20:17.235</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>1653216457</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020-01-13 13:20:17.235</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileHeaderFileNameDocumentationMustMatchFileName" ruleCheckId="SA1638">
+        <context>The file attribute in the file header's copyright tag must contain the name of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileHeaderFileNameDocumentationMustMatchTypeName" ruleCheckId="SA1649">
+        <context>The file attribute in the file header's copyright tag must contain the name of the first type in the file and can be any of these: "DataBaseImpl"</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="DocumentationTextMustContainWhitespace" ruleCheckId="SA1630">
+        <context>The documentation text within the summary tag does not contain any whitespace between words, indicating that it most likely does not follow a proper grammatical structure required for documentation text.</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementDocumentationMustBeSpelledCorrectly" ruleCheckId="SA1650">
+        <context>The documentation text within the summary tag contains incorrectly spelled words: 'Impl'</context>
+        <line>18</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <project key="-1297915908">
+    <configuration>
+    </configuration>
+  </project>
+  <sourcecode name="DataBaseImplementation.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2020-01-13 13:20:17.235</styleCop>
+      <settingsFile>2020-01-13 13:20:17.199</settingsFile>
+      <sourceFile>2020-01-22 12:55:50.690</sourceFile>
+      <parser>2020-01-13 13:20:17.235</parser>
+      <StyleCop.CSharp.DocumentationRules>2020-01-13 13:20:17.235</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>1653216457</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2020-01-13 13:20:17.235</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2020-01-13 13:20:17.235</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2020-01-13 13:20:17.235</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations />
   </sourcecode>
 </stylecopresultscache>

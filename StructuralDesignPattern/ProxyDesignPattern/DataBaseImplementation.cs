@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="DataBaseImpl class.cs" company="BridgeLabz">
+// <copyright file="DataBaseImplementation.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -10,11 +10,12 @@ namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
     using System;
     using System.Collections.Generic;
     using System.Text;
+
     /// <summary>
-    /// 
+    /// DataBaseImplementation class
     /// </summary>
     /// <seealso cref="DesignPattern.StructuralDesignPattern.ProxyDesignPattern.DataBaseExecutor" />
-    public class DataBaseImpl : DataBaseExecutor
+    public class DataBaseImplementation : DataBaseExecutor
     {
         /// <summary>
         /// Executes the database.
