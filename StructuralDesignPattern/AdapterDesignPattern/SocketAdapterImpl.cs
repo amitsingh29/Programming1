@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace DesignPattern.StructuralDesignPattern.AdapterDesignPattern
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     public class SocketAdapterImpl : Socket
     {
             public Volt Get120V()

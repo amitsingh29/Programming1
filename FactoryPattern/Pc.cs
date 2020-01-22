@@ -1,25 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Pc.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------using System;using System;
 
 namespace DesignPattern.FactoryPattern
 {
-    class Pc : CFactory
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    
+    /// <summary>
+    /// Pc class
+    /// </summary>
+    /// <seealso cref="DesignPattern.FactoryPattern.CFactory" />
+    public class Pc : CFactory
     {
         /// <summary>
         /// Functionalities the specified ram.
         /// </summary>
         /// <param name="ram">The ram.</param>
         /// <param name="processor">The processor.</param>
-        /// <param name="os">The os.</param>
-        public void functionality(string ram, string processor, string os)
+        /// <param name="operatingSystem">The operating system.</param>
+        public void Functionality(string ram, string processor, string operatingSystem)
         {
-            Console.WriteLine("Fnctionality of PC :" + ram.ToString() + " Gb " + processor.ToString() + " GB " + os.ToString());
+            Console.WriteLine("Functionality of PC :" + ram.ToString() + " Gb " + processor.ToString() + " GB " + operatingSystem.ToString());
         }
 
-        public void functionality()
+        /// <summary>
+        /// Functionalities this instance.
+        /// </summary>
+        public void Functionality()
         {
-            throw new NotImplementedException();
+            Console.WriteLine();
         }
     }
 }

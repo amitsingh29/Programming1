@@ -1,15 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="ProtoMain.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------using System;
 
 namespace DesignPattern.PrototypeDesignPattern
 {
-    class ProtoMain
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// ProtoMain class
+    /// </summary>
+     public class ProtoMain
     {
         /// <summary>
         /// Checks this instance.
         /// </summary>
-        public void check()
+        public void Check()
         {
             Developer d = new Developer();
             d.Name = "Amit";
@@ -36,12 +46,10 @@ namespace DesignPattern.PrototypeDesignPattern
             tester.Age = 23;
             tester.JobLocation = "Germany";
 
-            AutomationTester copy2 =(AutomationTester)tester.clone();
+            AutomationTester copy2 = (AutomationTester)tester.clone();
             copy2.Name = "Fahad";
             Console.WriteLine(tester.empDetails());
             Console.WriteLine(copy2.empDetails());
-
-
         }
     }
 }

@@ -1,29 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="LazyInitialization.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------using System;
 
 namespace DesignPattern.Singleton
 {
-    class LazyInitialization
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// Lazy Initialization
+    /// </summary>
+    public class LazyInitialization
     {
-        public static LazyInitialization obj;
+        /// <summary>
+        /// The object
+        /// </summary>
+        private static LazyInitialization Object;
+
+        /// <summary>
+        /// Prevents a default instance of the <see cref="LazyInitialization"/> class from being created.
+        /// </summary>
         private LazyInitialization()
         {
-
+            Console.WriteLine("LazyInitialization constructor");
         }
+
         /// <summary>
-        /// 
+        /// Gets the object.
         /// </summary>
         /// <returns></returns>
-        public static LazyInitialization GetObj()
+        public static LazyInitialization GetObject
         {
-                if (obj == null)
+            get
+            {
+                if (Object == null)
                 {
-                    obj = new LazyInitialization();
+                    Object = new LazyInitialization();
                 }
-                return obj;
-            }
-         
+
+                return Object;
+            }  
         }
     }
-
+}

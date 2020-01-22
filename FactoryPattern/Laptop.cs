@@ -1,19 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Laptop.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------using System;using System;
 
 namespace DesignPattern.FactoryPattern
 {
-    class Laptop : CFactory
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// Laptop- class
+    /// </summary>
+    /// <seealso cref="DesignPattern.FactoryPattern.CFactory" />
+    public class Laptop : CFactory
     {
-        public void functionality(string ram, string processor, string os)
+        /// <summary>
+        /// Functionalities the specified ram.
+        /// </summary>
+        /// <param name="ram">The ram.</param>
+        /// <param name="processor">The processor.</param>
+        /// <param name="operatingSystem">The operating system.</param>
+        public void Functionality(string ram, string processor, string operatingSystem)
         {
-            Console.WriteLine("Fnctionality of laptop :"+ram.ToString()+" Gb "+processor.ToString()+" GB "+os.ToString());
+            Console.WriteLine("Fnctionality of laptop :" + ram.ToString() + " Gb " + processor.ToString() + " GB " + operatingSystem.ToString());
         }
 
-        public void functionality()
+        /// <summary>
+        /// Functionalities this instance.
+        /// </summary>
+        /// <exception cref="NotImplementedException"></exception>
+        public void Functionality()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Functionality Method");
         }
     }
 }

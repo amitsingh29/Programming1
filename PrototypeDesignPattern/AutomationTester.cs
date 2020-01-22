@@ -1,9 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="AutomationTester.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------using System;
 
 namespace DesignPattern.PrototypeDesignPattern
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    /// <summary>
+    /// AutoMationTester class
+    /// </summary>
     class AutomationTester
     {
         public string Name { get; set; }

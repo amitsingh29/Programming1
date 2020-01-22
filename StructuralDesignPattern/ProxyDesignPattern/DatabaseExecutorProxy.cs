@@ -1,9 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="ThreadSafeSingleton.cs" company="BridgeLabz">
+//     Copyright © 2020 Company="BridgeLabz"
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------
 
 namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
     class DatabaseExecutorProxy : DataBaseExecutor
     {
         Boolean isAdmin;
@@ -23,7 +30,7 @@ namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
         /// <param name="name">The name.</param>
         /// <param name="pwd">The password.</param>
 
-        public void executeDatabase(string name,string pwd)
+        public void ExecuteDatabase(string name,string pwd)
         {
            if(name=="Admin" && pwd=="Admin@123")
             {
@@ -38,11 +45,11 @@ namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
         /// <param name="query">The query.</param>
         /// <exception cref="Exception">delete not allowed for non-admin user</exception>
         
-        public void executeDatabase(string query)
+        public void ExecuteDatabase(string query)
         {
             if(isAdmin)
             {
-                dataBaseExecuter.executeDatabase(query);
+                dataBaseExecuter.ExecuteDatabase(query);
             }
             else
             {
@@ -52,7 +59,7 @@ namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
                 }
                 else
                 {
-                    dataBaseExecuter.executeDatabase(query);
+                    dataBaseExecuter.ExecuteDatabase(query);
                 }
             }
         }
