@@ -6,8 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BehavioralDesignPattern\VisitorDesignPattern\" />
+    <Compile Remove="BehavioralDesignPattern\VisitorDesignPattern\ItemElement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="BehavioralDesignPattern\ObserverDesignPattern\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="BehavioralDesignPattern\VisitorDesignPattern\ItemElement.cs" />
   </ItemGroup>
 
 </Project>
