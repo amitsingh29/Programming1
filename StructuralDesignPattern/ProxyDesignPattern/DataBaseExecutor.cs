@@ -12,7 +12,7 @@ namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
     using System.Text;
 
     /// <summary>
-    /// DataBaseExecutor Interface
+    /// DataBaseExecutor class
     /// </summary>
     public interface DataBaseExecutor
     {
