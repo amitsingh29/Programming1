@@ -31,7 +31,6 @@ namespace DesignPattern.FactoryPattern
         /// <summary>
         /// Functionalities this instance.
         /// </summary>
-        /// <exception cref="NotImplementedException"></exception>
         public void Functionality()
         {
             Console.WriteLine("Functionality Method");
