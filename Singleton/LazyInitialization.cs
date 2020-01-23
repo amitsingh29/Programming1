@@ -30,9 +30,11 @@ namespace DesignPattern.Singleton
         }
 
         /// <summary>
-        /// Gets the object.
+        /// Gets the get object.
         /// </summary>
-        /// <returns></returns>
+        /// <value>
+        /// The get object.
+        /// </value>
         public static LazyInitialization GetObject
         {
             get
