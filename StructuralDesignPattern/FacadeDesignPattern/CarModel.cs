@@ -1,25 +1,28 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="DataBaseExecutor.cs" company="BridgeLabz">
+// <copyright file="CarModel.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
 //-----------------------------------------------------------------------
 
-namespace DesignPattern.StructuralDesignPattern.ProxyDesignPattern
+namespace DesignPattern.StructuralDesignPattern.FacadeDesignPattern
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
     /// <summary>
-    /// DataBaseExecutor class
+    /// CarModel class
     /// </summary>
-    public interface IDataBaseExecutor
+    class CarModel
     {
+
         /// <summary>
-        /// Executes the database.
+        /// Sets the model.
         /// </summary>
-        /// <param name="query">The query.</param>
-        public void ExecuteDatabase(string query); 
+        public void SetModel()
+        {
+            Console.WriteLine("Car Model - Set Model");
+        }
     }
 }
