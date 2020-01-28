@@ -32,7 +32,7 @@ namespace EmployeeManagement.Repository
             command.Parameters.AddWithValue("@WorkExp", emp.WorkExperience);
 
             var result = command.ExecuteNonQuery();
-            if (result >= 1)
+            if (result == 1)
             {
                 return true;
             }
@@ -52,7 +52,7 @@ namespace EmployeeManagement.Repository
             command.Parameters.AddWithValue("@Id", emp.Id);
 
             var result = command.ExecuteNonQuery();
-            if (result >= 1)
+            if (result == 1)
             {
                 return true;
             }
@@ -101,7 +101,7 @@ namespace EmployeeManagement.Repository
             command.Parameters.AddWithValue("@WorkExp", emp.WorkExperience);
 
             var result = command.ExecuteNonQuery();
-            if (result >= 1)
+            if (result == 1)
             {
                 return true;
             }
