@@ -10,6 +10,7 @@ namespace EmployeeManagement.Repository
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using EmployeeManagement.Model;
     using System.Threading.Tasks;
 
     /// <summary>
@@ -17,6 +18,27 @@ namespace EmployeeManagement.Repository
     /// </summary>
     public interface IRepo
     {
-    
+      /// <summary>
+      /// </summary>
+      /// <param name="emp"></param>
+      /// <returns>If added True else False</returns>
+        bool AddEmployee(Employee emp);
+
+        /// <summary>
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns>If added True else False</returns>
+        bool DeleteEmployee(int Id);
+
+        /// <summary> 
+        /// </summary>
+        /// <returns>If added True else False</returns>
+        List<Employee> GetAllEmployee();
+
+        /// <summary> 
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns>If added True else False</returns>
+        bool UpdateEmployee(Employee emp);
     }
 }
