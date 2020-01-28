@@ -1,0 +1,14 @@
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.deps.json
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.runtimeconfig.json
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.runtimeconfig.dev.json
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.dll
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.pdb
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csprojAssemblyReference.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.RazorAssemblyInfo.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.RazorAssemblyInfo.cs
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.AssemblyInfoInputs.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.AssemblyInfo.cs
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.RazorTargetAssemblyInfo.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.dll
+C:\Users\ye10397\Desktop\Amit\Programming1\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.pdb
