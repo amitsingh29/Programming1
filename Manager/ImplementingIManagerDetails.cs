@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file=" ImplementingIManagerDetails.cs" company="BridgeLabz">
+// <copyright file="RepoEmployeeImplementation.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -26,7 +26,7 @@ namespace EmployeeManagement.Manager
         private RepoEmployeeImplementation repo = new RepoEmployeeImplementation();
 
         /// <summary>
-        /// Gets all employee.
+        /// Get all employee list
         /// </summary>
         /// <returns> Gets Employee </returns>
         public List<Employee> GetAllEmployee()
