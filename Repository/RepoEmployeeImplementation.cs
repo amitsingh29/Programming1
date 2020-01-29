@@ -19,7 +19,7 @@ namespace EmployeeManagement.Repository
     /// <seealso cref="EmployeeManagement.Repository.IRepo" />
     public class RepoEmployeeImplementation : IRepo
     {
-        public string ConnectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
+        string ConnectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
         
         /// <summary>
         /// AddEmployee details
@@ -53,7 +53,7 @@ namespace EmployeeManagement.Repository
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
-        public bool DeleteEmployee(int Id)
+        public bool DeleteEmployee(int id)
         {
             SqlConnection connection = new SqlConnection(this.ConnectionString);
             SqlCommand command = new SqlCommand("spDeleteEmployee", connection);

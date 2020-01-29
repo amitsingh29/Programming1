@@ -7,11 +7,11 @@
 
 namespace EmployeeManagement.Manager
 {
-    using EmployeeManagement.Model;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using EmployeeManagement.Model;
 
     /// <summary>
     /// IManager class
@@ -30,7 +30,7 @@ namespace EmployeeManagement.Manager
         /// </summary>
         /// <param name="Id">The identifier.</param>
         /// <returns></returns>
-        bool DeleteEmployee(int Id);
+        bool DeleteEmployee(int id);
 
         /// <summary>
         /// Gets all employee.
