@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="ImplementingIManagerDetails .cs" company="BridgeLabz">
+// <copyright file=" ImplementingIManagerDetails.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -21,25 +21,25 @@ namespace EmployeeManagement.Manager
     public class ImplementingIManagerDetails : IManager
     {
         /// <summary>
-        /// The repo
+        /// Repo Employee Implementation object created
         /// </summary>
-        public RepoEmployeeImplementation repo = new RepoEmployeeImplementation();
+        private RepoEmployeeImplementation repo = new RepoEmployeeImplementation();
 
         /// <summary>
         /// Gets all employee.
         /// </summary>
-        /// <returns> GetsEmployee </returns>
-        public List<Employee>GetAllEmployee()
+        /// <returns> Gets Employee </returns>
+        public List<Employee> GetAllEmployee()
         {
             var result = this.repo.GetAllEmployee();
             return result;
         }
 
-        /// <summary>
-        /// Deletes the employee.
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns> DeletesEmployee </returns>
+       /// <summary>
+       /// Deletes employee with given id
+       /// </summary>
+       /// <param name="id"></param>
+       /// <returns>Boolean value</returns>
         public bool DeleteEmployee(int id)
         {
             var result = this.repo.DeleteEmployee(id);
@@ -50,7 +50,7 @@ namespace EmployeeManagement.Manager
         /// Adds the employee.
         /// </summary>
         /// <param name="employee">The employee.</param>
-        /// <returns>AddsEmployee</returns>
+        /// <returns>Boolean value</returns>
         public bool AddEmployee(Employee employee)
         {
             var result = this.repo.AddEmployee(employee);
@@ -61,7 +61,7 @@ namespace EmployeeManagement.Manager
         /// Updates the employee.
         /// </summary>
         /// <param name="employee">The employee.</param>
-        /// <returns> UpdateEmployeeList </returns>
+        /// <returns>Boolean value</returns>
         public bool UpdateEmployee(Employee employee)
         {
             var result = this.repo.UpdateEmployee(employee);
