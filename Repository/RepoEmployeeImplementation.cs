@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="IRepo.cs" company="BridgeLabz">
+// <copyright file="RepoEmployeeImplementation.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -7,11 +7,11 @@
 
 namespace EmployeeManagement.Repository
 {
-    using EmployeeManagement.Model;
     using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Data.SqlClient;
+    using EmployeeManagement.Model;
 
     /// <summary>
     ///  RepoEmployeeImplementation class
@@ -19,10 +19,16 @@ namespace EmployeeManagement.Repository
     /// <seealso cref="EmployeeManagement.Repository.IRepo" />
     public class RepoEmployeeImplementation : IRepo
     {
-        string connectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
+        public string ConnectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
+        
+        /// <summary>
+        /// AddEmployee details
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns></returns>
         public bool AddEmployee(Employee emp)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(this.ConnectionString);
             SqlCommand command = new SqlCommand("spAddEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
 
@@ -42,9 +48,14 @@ namespace EmployeeManagement.Repository
             }
         }
 
+        /// <summary>
+        /// DeleteEmployee
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         public bool DeleteEmployee(int Id)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(this.ConnectionString);
             SqlCommand command = new SqlCommand("spDeleteEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
             Employee emp = new Employee();
@@ -62,9 +73,13 @@ namespace EmployeeManagement.Repository
             }
         }
 
+        /// <summary>
+        /// Gets full list of Employee's
+        /// </summary>
+        /// <returns></returns>
         public List<Employee> GetAllEmployee()
         {
-            SqlConnection Connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(this.ConnectionString);
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.StoredProcedure;
 
@@ -85,12 +100,18 @@ namespace EmployeeManagement.Repository
 
                 employeeList.Add(employee);
             }
+
             return employeeList;
         }
 
+        /// <summary>
+        /// Update Employee details
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns></returns>
         public bool UpdateEmployee(Employee emp)
         {
-            SqlConnection Connection = new SqlConnection(connectionString);
+            SqlConnection connection = new SqlConnection(this.ConnectionString);
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.StoredProcedure;
 
