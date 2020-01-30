@@ -34,13 +34,14 @@ namespace EmployeeManagement.Repository
             SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand("spAddEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
-
             command.Parameters.AddWithValue("@FullName", emp.FullName);
             command.Parameters.AddWithValue("@Age", emp.Age);
             command.Parameters.AddWithValue("@EmailId", emp.EmailId);
             command.Parameters.AddWithValue("@WorkExp", emp.WorkExperience);
 
+            connection.Open();
             var result = command.ExecuteNonQuery();
+            connection.Close();
             if (result == 1)
             {
                 return true;
@@ -64,8 +65,9 @@ namespace EmployeeManagement.Repository
             Employee emp = new Employee();
 
             command.Parameters.AddWithValue("@Id", emp.Id);
-
+            connection.Open();
             var result = command.ExecuteNonQuery();
+            connection.Close();
             if (result == 1)
             {
                 return true;
@@ -89,7 +91,7 @@ namespace EmployeeManagement.Repository
             List<Employee> employeeList = new List<Employee>();
 
             SqlDataReader reader = command.ExecuteReader();
-
+            connection.Open();
             while (reader.Read())
             {
                 Employee employee = new Employee
@@ -102,6 +104,7 @@ namespace EmployeeManagement.Repository
                 };
 
                 employeeList.Add(employee);
+                connection.Close();
             }
 
             return employeeList;
@@ -122,8 +125,9 @@ namespace EmployeeManagement.Repository
             command.Parameters.AddWithValue("@Age", emp.Age);
             command.Parameters.AddWithValue("@EmailId", emp.EmailId);
             command.Parameters.AddWithValue("@WorkExp", emp.WorkExperience);
-
+            connection.Open();
             var result = command.ExecuteNonQuery();
+            connection.Close();
             if (result == 1)
             {
                 return true;
