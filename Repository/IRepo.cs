@@ -10,35 +10,39 @@ namespace EmployeeManagement.Repository
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using EmployeeManagement.Model;
     using System.Threading.Tasks;
-
+    using EmployeeManagement.Model;
+   
     /// <summary>
     /// IRepo class
     /// </summary>
     public interface IRepo
     {
-      /// <summary>
-      /// </summary>
-      /// <param name="emp"></param>
-      /// <returns>If added True else False</returns>
-        bool AddEmployee(Employee emp);
+        /// <summary>
+        /// Adds the employee.
+        /// </summary>
+        /// <param name="employee">The employee.</param>
+        /// <returns>Boolean value</returns>
+        bool AddEmployee(Employee employee);
 
         /// <summary>
+        /// Deletes the employee.
         /// </summary>
-        /// <param name="emp"></param>
-        /// <returns>If added True else False</returns>
-        bool DeleteEmployee(int Id);
+        /// <param name="id">The identifier.</param>
+        /// <returns>Boolean value</returns>
+        bool DeleteEmployee(int id);
 
-        /// <summary> 
+        /// <summary>
+        /// Gets all employee.
         /// </summary>
-        /// <returns>If added True else False</returns>
+        /// <returns>Get list</returns>
         List<Employee> GetAllEmployee();
 
-        /// <summary> 
+        /// <summary>
+        /// Updates the employee.
         /// </summary>
-        /// <param name="emp"></param>
-        /// <returns>If added True else False</returns>
-        bool UpdateEmployee(Employee emp);
+        /// <param name="employee">The employee.</param>
+        /// <returns>Boolean value</returns>
+        bool UpdateEmployee(Employee employee);
     }
 }

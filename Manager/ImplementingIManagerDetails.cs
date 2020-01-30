@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="RepoEmployeeImplementation.cs" company="BridgeLabz">
+// <copyright file="ImplementingIManagerDetails.cs" company="BridgeLabz">
 //     Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -38,7 +38,7 @@ namespace EmployeeManagement.Manager
        /// <summary>
        /// Deletes employee with given id
        /// </summary>
-       /// <param name="id"></param>
+       /// <param name="id">Employee id</param>
        /// <returns>Boolean value</returns>
         public bool DeleteEmployee(int id)
         {
