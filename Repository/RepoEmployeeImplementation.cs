@@ -19,16 +19,19 @@ namespace EmployeeManagement.Repository
     /// <seealso cref="EmployeeManagement.Repository.IRepo" />
     public class RepoEmployeeImplementation : IRepo
     {
-        string ConnectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
+        /// <summary>
+        /// The connection string
+        /// </summary>
+       private string connectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
         
         /// <summary>
         /// AddEmployee details
         /// </summary>
-        /// <param name="emp"></param>
-        /// <returns></returns>
+        /// <param name="emp">Add employee</param>
+        /// <returns>Boolean value</returns>
         public bool AddEmployee(Employee emp)
         {
-            SqlConnection connection = new SqlConnection(this.ConnectionString);
+            SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand("spAddEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
 
@@ -49,13 +52,13 @@ namespace EmployeeManagement.Repository
         }
 
         /// <summary>
-        /// DeleteEmployee
+        /// Delete Employee
         /// </summary>
-        /// <param name="Id"></param>
-        /// <returns></returns>
+        /// <param name="id">employee id</param>
+        /// <returns>Boolean value</returns>
         public bool DeleteEmployee(int id)
         {
-            SqlConnection connection = new SqlConnection(this.ConnectionString);
+            SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand("spDeleteEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
             Employee emp = new Employee();
@@ -76,10 +79,10 @@ namespace EmployeeManagement.Repository
         /// <summary>
         /// Gets full list of Employee's
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Employee full list</returns>
         public List<Employee> GetAllEmployee()
         {
-            SqlConnection connection = new SqlConnection(this.ConnectionString);
+            SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.StoredProcedure;
 
@@ -107,14 +110,13 @@ namespace EmployeeManagement.Repository
         /// <summary>
         /// Update Employee details
         /// </summary>
-        /// <param name="emp"></param>
-        /// <returns></returns>
+        /// <param name="emp">update list</param>
+        /// <returns>Boolean value</returns>
         public bool UpdateEmployee(Employee emp)
         {
-            SqlConnection connection = new SqlConnection(this.ConnectionString);
+            SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.StoredProcedure;
-
             command.Parameters.AddWithValue("@Id", emp.Id);
             command.Parameters.AddWithValue("@FullName", emp.FullName);
             command.Parameters.AddWithValue("@Age", emp.Age);
