@@ -17,7 +17,6 @@ namespace EmployeeManagement.Manager
     /// <summary>
     /// ImplementingIManagerDetails class
     /// </summary>
-    /// <seealso cref="EmployeeManagement.Manager.IManager" />
     public class ImplementingIManagerDetails : IManager
     {
         /// <summary>
