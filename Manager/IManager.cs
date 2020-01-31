@@ -21,28 +21,28 @@ namespace EmployeeManagement.Manager
         /// <summary>
         /// Adds the employee.
         /// </summary>
-        /// <param name="emp">The emp.</param>
-        /// <returns></returns>
-        bool AddEmployee(Employee emp);
+        /// <param name="employee">The employee.</param>
+        /// <returns>boolean value</returns>
+        bool AddEmployee(Employee employee);
 
         /// <summary>
         /// Deletes the employee.
         /// </summary>
-        /// <param name="Id">The identifier.</param>
-        /// <returns></returns>
+        /// <param name="id">The identifier.</param>
+        /// <returns>boolean value</returns>
         bool DeleteEmployee(int id);
 
         /// <summary>
         /// Gets all employee.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>employee list</returns>
         List<Employee> GetAllEmployee();
 
         /// <summary>
         /// Updates the employee.
         /// </summary>
-        /// <param name="emp">The emp.</param>
-        /// <returns></returns>
-        bool UpdateEmployee(Employee emp);
+        /// <param name="employee">The employee.</param>
+        /// <returns>boolean value</returns>
+        bool UpdateEmployee(Employee employee);
     }
 }
