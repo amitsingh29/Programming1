@@ -35,11 +35,11 @@ namespace EmployeeManagement.Manager
             return result;
         }
 
-       /// <summary>
-       /// Deletes employee with given id
-       /// </summary>
-       /// <param name="id">Employee id</param>
-       /// <returns>Boolean value</returns>
+        /// <summary>
+        /// Deletes employee with given id
+        /// </summary>
+        /// <param name="id">Employee id</param>
+        /// <returns>Boolean value</returns>
         public bool DeleteEmployee(int id)
         {
             var result = this.repo.DeleteEmployee(id);
