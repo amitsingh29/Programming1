@@ -64,7 +64,7 @@ namespace EmployeeManagement.Repository
             command.CommandType = CommandType.StoredProcedure;
             Employee emp = new Employee();
 
-            command.Parameters.AddWithValue("@Id", emp.Id);
+            command.Parameters.AddWithValue("@Id", emp.id);
             connection.Open();
             var result = command.ExecuteNonQuery();
             connection.Close();

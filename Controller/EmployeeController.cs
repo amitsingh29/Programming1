@@ -36,7 +36,7 @@ namespace EmployeeManagement.Controller
         /// <returns>boolean value</returns>
         [HttpDelete]
         [Route("api/delete")]
-        public IActionResult DeleteEmployee(int id)
+        public IActionResult DeleteEmployee([FromBody] int id)
         {
             var check = this.manager.DeleteEmployee(id);
             if (check)
@@ -76,7 +76,7 @@ namespace EmployeeManagement.Controller
         /// <returns>boolean value</returns>
         [HttpPut]
         [Route("api/update")]
-        public IActionResult UpdateEmployee(Employee employee)
+        public IActionResult UpdateEmployee([FromBody] Employee employee)
         {
             var check = this.manager.UpdateEmployee(employee);
             if (check)
