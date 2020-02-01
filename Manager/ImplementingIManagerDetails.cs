@@ -60,7 +60,9 @@ namespace EmployeeManagement.Manager
         /// Updates the employee.
         /// </summary>
         /// <param name="employee">The employee.</param>
-        /// <returns>Boolean value</returns>
+        /// <returns>
+        /// boolean value
+        /// </returns>
         public bool UpdateEmployee(Employee employee)
         {
             var result = this.repo.UpdateEmployee(employee);
