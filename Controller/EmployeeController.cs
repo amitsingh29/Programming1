@@ -56,7 +56,7 @@ namespace EmployeeManagement.Controller
         /// <returns>boolean value</returns>
         [HttpPost]
         [Route("api/add")]
-        public IActionResult AddEmployee(Employee employee)
+        public IActionResult AddEmployee([FromBody] Employee employee)
         {
             var check = this.manager.AddEmployee(employee);
             if (check)

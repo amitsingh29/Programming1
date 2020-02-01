@@ -18,20 +18,48 @@ namespace EmployeeManagement.Model
     public class Employee
     {
         /// <summary>
-        /// Gets or sets the identifier.
+        /// The identifier
         /// </summary>
-        /// <value>
-        /// The identifier.
-        /// </value>
-        public int Id { get; set; }
+        private int id;
 
         /// <summary>
-        /// Gets or sets the full name.
+        /// The full name
+        /// </summary>
+        private string fullName;
+
+        /// <summary>
+        /// The email identifier
+        /// </summary>
+        private string emailId;
+
+        /// <summary>
+        /// The age
+        /// </summary>
+        private string age;
+
+        /// <summary>
+        /// The work experience
+        /// </summary>
+        private int workExperience;
+
+        /// <summary>
+        /// Gets or sets the name.
         /// </summary>
         /// <value>
-        /// The full name.
+        /// The name.
         /// </value>
-        public string FullName { get; set; }
+        public string Name
+        {
+            get
+            {
+                return this.Name;
+            }
+
+            set
+            {
+                this.Name = value;
+            }
+        }
 
         /// <summary>
         /// Gets or sets the age.
@@ -39,22 +67,55 @@ namespace EmployeeManagement.Model
         /// <value>
         /// The age.
         /// </value>
-        public string Age { get; set; }
+        public string AgeEmployee
+        {
+            get
+            {
+                return this.AgeEmployee;
+            }
+
+            set
+            {
+                this.AgeEmployee = value;
+            }
+        }
 
         /// <summary>
-        /// Gets or sets the email identifier.
+        /// Gets or sets the email.
         /// </summary>
         /// <value>
-        /// The email identifier.
+        /// The email.
         /// </value>
-        public string EmailId { get; set; }
+        public string Email
+        {
+            get
+            {
+                return this.Email;
+            }
 
+            set
+            {
+               this.Email = value;
+            }
+        }
+      
         /// <summary>
-        /// Gets or sets the work experience.
+        /// Gets or sets the experience.
         /// </summary>
         /// <value>
-        /// The work experience.
+        /// The experience.
         /// </value>
-        public int WorkExperience { get; set; }
+        public string Experience
+        {
+            get
+            {
+                return this.Experience;
+            }
+
+            set
+            {
+               this.Experience = value;
+            }
+        }
     }
 }
