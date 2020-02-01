@@ -35,8 +35,8 @@ namespace EmployeeManagement.Controller
         /// <param name="id">The identifier.</param>
         /// <returns>boolean value</returns>
         [HttpDelete]
-        [Route("api/delete")]
-        public IActionResult DeleteEmployee([FromBody] int id)
+        [Route("Delete")]
+        public IActionResult DeleteEmployee(int id)
         {
             var check = this.manager.DeleteEmployee(id);
             if (check)
@@ -55,7 +55,7 @@ namespace EmployeeManagement.Controller
         /// <param name="employee">The employee.</param>
         /// <returns>boolean value</returns>
         [HttpPost]
-        [Route("api/add")]
+        [Route("Add")]
         public IActionResult AddEmployee([FromBody] Employee employee)
         {
             var check = this.manager.AddEmployee(employee);
@@ -75,8 +75,8 @@ namespace EmployeeManagement.Controller
         /// <param name="employee">The employee.</param>
         /// <returns>boolean value</returns>
         [HttpPut]
-        [Route("api/update")]
-        public IActionResult UpdateEmployee([FromBody] Employee employee)
+        [Route("api/Update")]
+        public IActionResult UpdateEmployee(Employee employee)
         {
             var check = this.manager.UpdateEmployee(employee);
             if (check)

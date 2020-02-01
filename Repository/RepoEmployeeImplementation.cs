@@ -7,11 +7,12 @@
 
 namespace EmployeeManagement.Repository
 {
+    using EmployeeManagement.Model;
+    using Newtonsoft.Json.Linq;
     using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Data.SqlClient;
-    using EmployeeManagement.Model;
 
     /// <summary>
     ///  RepoEmployeeImplementation class
@@ -22,22 +23,22 @@ namespace EmployeeManagement.Repository
         /// <summary>
         /// The connection string
         /// </summary>
-       private string connectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
-        
+        private readonly string connectionString = "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmployeeManagement; Integrated Security = SSPI";
+
         /// <summary>
         /// AddEmployee details
         /// </summary>
-        /// <param name="emp">Add employee</param>
+        /// <param name="employee">Add employee</param>
         /// <returns>Boolean value</returns>
-        public bool AddEmployee(Employee emp)
+        public bool AddEmployee(Employee employee)
         {
             SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand("spAddEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@FullName", emp.FullName);
-            command.Parameters.AddWithValue("@Age", emp.Age);
-            command.Parameters.AddWithValue("@EmailId", emp.EmailId);
-            command.Parameters.AddWithValue("@WorkExp", emp.WorkExperience);
+            command.Parameters.AddWithValue("@FullName", employee.FullName);
+            command.Parameters.AddWithValue("@Age", employee.Age);
+            command.Parameters.AddWithValue("@EmailId", employee.EmailId);
+            command.Parameters.AddWithValue("@WorkExp", employee.WorkExp);
 
             connection.Open();
             var result = command.ExecuteNonQuery();
@@ -62,9 +63,9 @@ namespace EmployeeManagement.Repository
             SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand("spDeleteEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
-            Employee emp = new Employee();
+            //Employee employee = new Employee();
 
-            command.Parameters.AddWithValue("@Id", emp.id);
+            command.Parameters.AddWithValue("@Id", id);
             connection.Open();
             var result = command.ExecuteNonQuery();
             connection.Close();
@@ -96,11 +97,11 @@ namespace EmployeeManagement.Repository
             {
                 Employee employee = new Employee
                 {
-                    Id = Convert.ToInt32(reader["Id"]),
+                    Id = reader["Id"].ToString(),
                     FullName = reader["FullName"].ToString(),
                     Age = reader["Age"].ToString(),
                     EmailId = reader["EmailId"].ToString(),
-                    WorkExperience = Convert.ToInt32(reader["WorkExp"])
+                    WorkExp = Convert.ToInt32(reader["WorkExp"].ToString())
                 };
 
                 employeeList.Add(employee);
@@ -111,20 +112,20 @@ namespace EmployeeManagement.Repository
         }
 
         /// <summary>
-        /// Update Employee details
+        /// Update employee
         /// </summary>
-        /// <param name="emp">update list</param>
-        /// <returns>Boolean value</returns>
-        public bool UpdateEmployee(Employee emp)
+        /// <param name="employee"></param>
+        /// <returns></returns>
+        public bool UpdateEmployee(Employee employee)
         {
             SqlConnection connection = new SqlConnection(this.connectionString);
-            SqlCommand command = new SqlCommand();
+            SqlCommand command = new SqlCommand("spUpdateEmployee",connection);
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@Id", emp.Id);
-            command.Parameters.AddWithValue("@FullName", emp.FullName);
-            command.Parameters.AddWithValue("@Age", emp.Age);
-            command.Parameters.AddWithValue("@EmailId", emp.EmailId);
-            command.Parameters.AddWithValue("@WorkExp", emp.WorkExperience);
+            command.Parameters.AddWithValue("@Id", employee.Id);
+            command.Parameters.AddWithValue("@FullName", employee.FullName);
+            command.Parameters.AddWithValue("@Age", employee.Age);
+            command.Parameters.AddWithValue("@EmailId", employee.EmailId);
+            command.Parameters.AddWithValue("@WorkExp", employee.WorkExp);
             connection.Open();
             var result = command.ExecuteNonQuery();
             connection.Close();

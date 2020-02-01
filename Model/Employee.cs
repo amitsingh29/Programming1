@@ -20,7 +20,7 @@ namespace EmployeeManagement.Model
         /// <summary>
         /// The identifier
         /// </summary>
-        private int id;
+        private string id;
 
         /// <summary>
         /// The full name
@@ -28,36 +28,55 @@ namespace EmployeeManagement.Model
         private string fullName;
 
         /// <summary>
-        /// The email identifier
-        /// </summary>
-        private string emailId;
-
-        /// <summary>
         /// The age
         /// </summary>
         private string age;
 
         /// <summary>
-        /// The work experience
+        /// The email identifier
         /// </summary>
-        private int workExperience;
+        private string emailId;
 
         /// <summary>
-        /// Gets or sets the name.
+        /// The work experience
+        /// </summary>
+        private int workExp;
+
+        /// <summary>
+        /// Gets or sets the identifier.
         /// </summary>
         /// <value>
-        /// The name.
+        /// The identifier.
         /// </value>
-        public string Name
+        public string Id
         {
             get
             {
-                return this.Name;
+              return this.id;
             }
 
             set
             {
-                this.Name = value;
+                this.id = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the full name.
+        /// </summary>
+        /// <value>
+        /// The full name.
+        /// </value>
+        public string FullName
+        {
+            get
+            {
+                return this.fullName;
+            }
+
+            set
+            {
+                this.fullName = value;
             }
         }
 
@@ -67,54 +86,54 @@ namespace EmployeeManagement.Model
         /// <value>
         /// The age.
         /// </value>
-        public string AgeEmployee
+        public string Age
         {
             get
             {
-                return this.AgeEmployee;
+                return this.age;
             }
 
             set
             {
-                this.AgeEmployee = value;
+                this.age = value;
             }
         }
 
         /// <summary>
-        /// Gets or sets the email.
+        /// Gets or sets the email identifier.
         /// </summary>
         /// <value>
-        /// The email.
+        /// The email identifier.
         /// </value>
-        public string Email
+        public string EmailId
         {
             get
             {
-                return this.Email;
+                return this.emailId;
             }
 
             set
             {
-               this.Email = value;
+                this.emailId = value;
             }
         }
-      
+
         /// <summary>
-        /// Gets or sets the experience.
+        /// Gets or sets the work experience.
         /// </summary>
         /// <value>
-        /// The experience.
+        /// The work experience.
         /// </value>
-        public string Experience
+        public int WorkExp
         {
             get
             {
-                return this.Experience;
+                return this.workExp;
             }
 
             set
             {
-               this.Experience = value;
+                this.workExp = value;
             }
         }
     }
