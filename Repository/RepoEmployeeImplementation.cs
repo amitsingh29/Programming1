@@ -7,13 +7,13 @@
 
 namespace EmployeeManagement.Repository
 {
-    using EmployeeManagement.Model;
-    using Newtonsoft.Json.Linq;
     using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Data.SqlClient;
-
+    using EmployeeManagement.Model;
+    using Newtonsoft.Json.Linq;
+   
     /// <summary>
     ///  RepoEmployeeImplementation class
     /// </summary>
@@ -63,8 +63,6 @@ namespace EmployeeManagement.Repository
             SqlConnection connection = new SqlConnection(this.connectionString);
             SqlCommand command = new SqlCommand("spDeleteEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
-            //Employee employee = new Employee();
-
             command.Parameters.AddWithValue("@Id", id);
             connection.Open();
             var result = command.ExecuteNonQuery();
@@ -112,14 +110,16 @@ namespace EmployeeManagement.Repository
         }
 
         /// <summary>
-        /// Update employee
+        /// Updates the employee.
         /// </summary>
-        /// <param name="employee"></param>
-        /// <returns></returns>
+        /// <param name="employee">The employee.</param>
+        /// <returns>
+        /// Boolean value
+        /// </returns>
         public bool UpdateEmployee(Employee employee)
         {
             SqlConnection connection = new SqlConnection(this.connectionString);
-            SqlCommand command = new SqlCommand("spUpdateEmployee",connection);
+            SqlCommand command = new SqlCommand("spUpdateEmployee", connection);
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@Id", employee.Id);
             command.Parameters.AddWithValue("@FullName", employee.FullName);
