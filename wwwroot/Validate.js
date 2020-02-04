@@ -1,4 +1,4 @@
-﻿function validateSignUp() {
+﻿/*function validateSignUp() {
     if (document.getElementById("FullName").value.length < 5) {
         document.getElementById("errorSignUp").innerHTML = "FullName should be atleast 5 letter";
         document.SignUpForm.Name.focus();
@@ -27,7 +27,7 @@
         document.getElementById("errorSignUp").innerHTML = "Incorrect WorkExperience";
         document.SignUpForm.Mobile.focus();
         return false;
-    }
+    }*/
 
     console.log($('#FullName').val());
 
@@ -36,7 +36,7 @@
         type: 'POST',
         contentType: 'application/json;charset=utf-8',
         dataType: 'json',
-        data: "{'FullName': '" + $('#FullName').val() + "','UserName': '" + $('#SignUpUserName').val() + "','Pass': '" + $('#SignUpPass').val() + "','Age': '" + $('#Age').val() +"','EmailId': '" + $('#EmailId').val() + "','WorkExperience': '" + $('#WorkExperience').val() + "'}",
+        data: "{'FullName': '" + $('#FullName').val() + "','Age': '" + $('#Age').val() +"','EmailId': '" + $('#EmailId').val() + "','WorkExperience': " + $('#WorkExperience').val() + "}",
         success: function () {
             alert("Data Inserted successfully!!!");
         },
@@ -45,22 +45,19 @@
         }
     });
 
-    $(".signup-form").hide();
-    $(".login-form").show();
-    event.preventDefault();
     return true;
 }
 
-function validateLogin() {
+/*function validateLogin() {
     if (document.getElementById("LoginId").value.length < 4 || document.getElementById("LoginPass").value.length < 4) {
         document.getElementById("errorLogin").innerHTML = "Username or Password is incorrect";
         document.LoginForm.LoginPass.focus();
         return false;
     }
     return true;
-}
+}*/
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(".login-form").hide();
 
 
@@ -81,3 +78,4 @@ $(document).ready(function () {
     });
 
 });
+*/
