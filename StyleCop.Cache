@@ -288,10 +288,6 @@
     </timestamps>
     <violations />
   </sourcecode>
-  <project key="-2092443446">
-    <configuration>
-    </configuration>
-  </project>
   <sourcecode name="RepoEmployeeImplementation.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2020-01-13 13:20:17.235</styleCop>
@@ -315,4 +311,8 @@
     </timestamps>
     <violations />
   </sourcecode>
+  <project key="-2092443446">
+    <configuration>
+    </configuration>
+  </project>
 </stylecopresultscache>
