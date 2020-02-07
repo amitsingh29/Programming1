@@ -3,16 +3,16 @@ printf "Enter a number"
 read N
 for((i=2;i*i<=$N;i++))
 do
-while(($N%i==0))
-do
-echo "$N"
-$N=$N/i;
+	while(($N%$i==0))
+	do
+		echo "$i"
+		N=$((N/i));
+	done
 done
-done
-if(($N)>1)
+if(($N>1))
 then
-echo "$N"
+	echo "$N"
 else
-echo "invalid input"
+	echo "invalid input"
 fi
 
