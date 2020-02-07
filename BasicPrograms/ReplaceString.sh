@@ -1,8 +1,8 @@
 #!/bin/bash
-Name="Hello <<UserName>>,How are you?"
+GivenName="Hello <<UserName>>,How are you?"
 echo "Enter your name"
-read name
-if((${#name}>3))
+read Username
+if((${#Username}>3))
 then
-echo ${Name//<<UserName>>/$name}
+echo ${GivenName//<<UserName>>/$Username}
 fi
