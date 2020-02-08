@@ -4,14 +4,14 @@ read
 hour=$(date +'%H')
 minute=$(date +'%M')
 second=$(date +'%S')
-echo "start time is: $hour:$minute:$second"
+echo "start time is:$hour:$minute:$second"
 
 echo "Press 2 to stop your stopwatch"
 read
 hour1=$(date +'%H')
 minute1=$(date +'%M')
 second1=$(date +'%S')
-echo "stop time is: $hour1:$minute1:$second1"
+echo "stop time is:$hour1:$minute1:$second1"
 
 Hour=$((hour1-hour))
 Minute=$((minute1-minute))
