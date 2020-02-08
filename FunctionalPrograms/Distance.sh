@@ -1,8 +1,8 @@
 #!/bin/bash
-x=$4
-y=$3
+x=$1
+y=$2
   distance=$((x**x+y**y))
-  echo $distance
+   echo $distance
     distance=$(echo | awk -v distance=$distance '{print(distance**0.5)}')
-    echo "The distance is:$distance"
+     echo "The distance is:$distance"
 
