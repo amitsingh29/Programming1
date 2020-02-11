@@ -1,0 +1,9 @@
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\bin\Debug\LoggerFile.exe.config
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\bin\Debug\LoggerFile.exe
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\bin\Debug\LoggerFile.pdb
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\obj\Debug\LoggerFile.csprojAssemblyReference.cache
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\obj\Debug\LoggerFile.exe
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\obj\Debug\LoggerFile.pdb
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\bin\Debug\log4net.dll
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\bin\Debug\log4net.xml
+C:\Users\ye10397\Desktop\Amit\Programming1\LoggerFile\LoggerFile\obj\Debug\LoggerFile.csproj.CopyComplete
