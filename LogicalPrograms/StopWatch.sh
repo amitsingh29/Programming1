@@ -21,5 +21,5 @@ if((Second< 0))
 then
 Second=$((60+Second))
 Minute=$((Minute-1))
-fi
 printf "Elapsed time is: %02d:%02d:%02d" "$Hour" "$Minute" "$Second"
+fi
