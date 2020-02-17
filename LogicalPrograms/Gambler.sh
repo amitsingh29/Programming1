@@ -1,38 +1,37 @@
 #!/bin/bash
-echo "Enter the stake"
+ printf "Enter Stake: "
 read stake
-echo "Enter the goal"
+printf "Enter Goal: "
 read goal
-echo "Enter the no of bets"
-read bets
-win=0
-loss=0
+number=0
+wins=0
 RANDOM=$$
-for((i=1;i<=$bets;i++))
+while((stake!=0 && goal!=stake))
 do
-  if(($RANDOM%2==0))
-  then
-  win=$((win+1))
-  stake=$((stake-1))
-    if(($stake==$goal))
-    then
-    echo "You have won the match"
-    break
-    fi
-    fi
-      else
-      loss=$((loss-1))
-      stake=$((stake-1))
-       if(($stake==0))
-       then
-       echo "You have lost the game"
-       break
-       fi
-       done
-	winPercentage=$(echo | awk -v win=$win -v total=$bets '{print (win*100)/total}')
-	lossPer=$(echo | awk -v loss=$loss -v total=$bets '{print (loss*100)/total}')
-	echo "winPercentage is:$winPercentage"	
-	echo "lossPercentage is:$lossPercentage"
+	if(($RANDOM%2==0))
+	then
+		wins=$((wins+1))
+		stake=$((stake+1))
+	else
+		stake=$((stake-1))
+	fi
+	number=$((number+1))
+done
+
+if((stake==0))
+then
+	echo -e "Gambler is broke!!!\n"
+fi
+if((stake==goal))
+then
+	echo -e "Goal Achieved!!!\n"
+fi
+winPercent=$(echo | awk -v wins=$wins -v total=$number '{print(wins*100/total)}')
+echo "Total Wins: $wins"
+echo "Win Percent: $winPercent"
+echo "Total Experiment: $number"
+
+
 
 
 
