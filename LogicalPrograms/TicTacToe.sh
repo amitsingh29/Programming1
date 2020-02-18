@@ -163,4 +163,3 @@ done
 if((win==0))
 then
 	echo "Match drawn!!!"
-fi
