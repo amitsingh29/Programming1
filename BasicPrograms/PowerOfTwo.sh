@@ -8,5 +8,5 @@ if(($N>=0 && $N<31))
 		do
 			pow=$(( 2**$i ))
 			echo "Power of 2^$i is:$pow" 
-	done
+		done
 fi
