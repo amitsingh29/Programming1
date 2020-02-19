@@ -20,7 +20,7 @@ namespace XUnitUserRegistration
         /// </summary>
         [Fact]
         public void TestFirstName()
-        {
+        { 
             Assert.True(UserRegistration.FirstName("Amit"));
         }
 

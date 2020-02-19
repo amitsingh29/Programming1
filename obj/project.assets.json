@@ -6585,11 +6585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UserRegistration\\XUnitUserRegistration\\XUnitUserRegistration.csproj",
+      "projectUniqueName": "C:\\Users\\ye10397\\Desktop\\Amit\\Programming1\\UserRegistration\\XUnitUserRegistration\\XUnitUserRegistration.csproj",
       "projectName": "XUnitUserRegistration",
-      "projectPath": "D:\\UserRegistration\\XUnitUserRegistration\\XUnitUserRegistration.csproj",
+      "projectPath": "C:\\Users\\ye10397\\Desktop\\Amit\\Programming1\\UserRegistration\\XUnitUserRegistration\\XUnitUserRegistration.csproj",
       "packagesPath": "C:\\Users\\ye10397\\.nuget\\packages\\",
-      "outputPath": "D:\\UserRegistration\\XUnitUserRegistration\\obj\\",
+      "outputPath": "C:\\Users\\ye10397\\Desktop\\Amit\\Programming1\\UserRegistration\\XUnitUserRegistration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ye10397\\AppData\\Roaming\\NuGet\\NuGet.Config",

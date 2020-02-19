@@ -42,7 +42,7 @@ namespace XUnitUserRegistration
         /// <param name="input">string input</param>
         /// <returns>boolean value</returns>
         public static bool Age(string input)
-        {
+        { 
             return Regex.IsMatch(input, "^[0-9]+$");
         }
 
