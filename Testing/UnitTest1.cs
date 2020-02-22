@@ -10,5 +10,11 @@ namespace Testing
             MoodAnalyser mood = new MoodAnalyser();
             Assert.Pass(mood.AnalyseMood("I'm in sad mood"), "Sad");
         }
+        [Test]
+        public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
+        {
+            MoodAnalyser mood = new MoodAnalyser();
+            Assert.Pass(mood.AnalyseMood("I am in any mood"), "Happy");
+        }
     }
 }
