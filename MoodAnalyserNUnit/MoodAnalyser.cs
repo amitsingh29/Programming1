@@ -13,16 +13,26 @@ namespace MoodAnalyserNUnit
         }
         public MoodAnalyser(string message)
         {
-            this.message = "I am in sad mood";
+            this.message = "";
         }
-       public string AnalyseMood()
-       {
-            if(message == "I am in sad mood")
+        public string AnalyseMood()
+        {
+            try
             {
-                return "Sad";
+                if (message == "I'm in a sad mood")
+                {
+                    return "Sad";
+                }
+                else if (message == null)
+                {
+                    throw new InvalidMoodException();
+                }
             }
-
+            catch (InvalidMoodException exception)
+            {
+                Console.WriteLine(exception.Message);
+            }
             return "Happy";
-       }
+        }
     }
 }

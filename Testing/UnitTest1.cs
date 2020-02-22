@@ -17,5 +17,12 @@ namespace Testing
             MoodAnalyser mood = new MoodAnalyser();
             Assert.Pass(mood.AnalyseMood(), "Happy");
         }
+
+        [Test]
+        public void GivenNullMood_WhenAnalyse_ReturnHappy()
+        {
+            MoodAnalyser mood = new MoodAnalyser();
+            Assert.AreEqual(mood.AnalyseMood(), "Happy");
+        }
     }
 }
