@@ -8,13 +8,14 @@ namespace Testing
         public void GivenSadMessage_WhenAnalyse_ReturnSad()
         {
             MoodAnalyser mood = new MoodAnalyser();
-            Assert.Pass(mood.AnalyseMood("I'm in sad mood"), "Sad");
+            Assert.Pass(mood.AnalyseMood(), "Sad");
         }
+
         [Test]
         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
         {
             MoodAnalyser mood = new MoodAnalyser();
-            Assert.Pass(mood.AnalyseMood("I am in any mood"), "Happy");
+            Assert.Pass(mood.AnalyseMood(), "Happy");
         }
     }
 }

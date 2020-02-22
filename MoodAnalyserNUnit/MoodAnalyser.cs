@@ -6,14 +6,23 @@ namespace MoodAnalyserNUnit
 {
     public class MoodAnalyser
     {
-       public string AnalyseMood(string message)
+        string message;
+        public MoodAnalyser()
         {
-            if(message == "I'm in sad mood")
+
+        }
+        public MoodAnalyser(string message)
+        {
+            this.message = "I am in sad mood";
+        }
+       public string AnalyseMood()
+       {
+            if(message == "I am in sad mood")
             {
                 return "Sad";
             }
 
             return "Happy";
-        }
+       }
     }
 }
