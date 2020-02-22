@@ -1,0 +1,11 @@
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\bin\Debug\netcoreapp3.1\MoodAnalyserNUnit.exe
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\bin\Debug\netcoreapp3.1\MoodAnalyserNUnit.deps.json
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\bin\Debug\netcoreapp3.1\MoodAnalyserNUnit.runtimeconfig.json
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\bin\Debug\netcoreapp3.1\MoodAnalyserNUnit.runtimeconfig.dev.json
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\bin\Debug\netcoreapp3.1\MoodAnalyserNUnit.dll
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\bin\Debug\netcoreapp3.1\MoodAnalyserNUnit.pdb
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\obj\Debug\netcoreapp3.1\MoodAnalyserNUnit.csprojAssemblyReference.cache
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\obj\Debug\netcoreapp3.1\MoodAnalyserNUnit.AssemblyInfoInputs.cache
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\obj\Debug\netcoreapp3.1\MoodAnalyserNUnit.AssemblyInfo.cs
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\obj\Debug\netcoreapp3.1\MoodAnalyserNUnit.dll
+C:\Users\ye10397\Desktop\Amit\MoodAnalyser\MoodAnalyserNUnit\obj\Debug\netcoreapp3.1\MoodAnalyserNUnit.pdb
