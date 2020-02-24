@@ -19,10 +19,18 @@ namespace Testing
         }
 
         [Test]
-        public void GivenNullMood_WhenAnalyse_ReturnHappy()
+        public void GivenEmptyMood_ShouldThrow_EmptyMood()
         {
-            MoodAnalyser mood = new MoodAnalyser();
-            Assert.AreEqual(mood.AnalyseMood(), "Happy");
+            MoodAnalyser mood = new MoodAnalyser(string.Empty);
+            Assert.AreEqual(mood.AnalyseMood(), "Empty Mood");
+        }
+
+
+        [Test]
+        public void GivenNullMood_ShouldThrow_NullMood()
+        {
+            MoodAnalyser mood = new MoodAnalyser(null);
+            Assert.AreEqual(mood.AnalyseMood(), "Null Mood");
         }
     }
-}
+    }
