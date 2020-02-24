@@ -2,6 +2,7 @@ using NUnit.Framework;
 using MoodAnalyserNUnit;
 namespace Testing
 {
+    [TestFixture]
     public class Tests
     {
         [Test]
@@ -24,7 +25,6 @@ namespace Testing
             MoodAnalyser mood = new MoodAnalyser(string.Empty);
             Assert.AreEqual(mood.AnalyseMood(), "Empty Mood");
         }
-
 
         [Test]
         public void GivenNullMood_ShouldThrow_NullMood()
