@@ -1,11 +1,24 @@
+//-----------------------------------------------------------------------
+// <copyright file="Tests.cs" company="BridgeLabz">
+//     Copyright © 2020
+// </copyright>
+// <creator name="Amit Singh"/>
+//-----------------------------------------------------------------------
+
 namespace Testing
 {
     using MoodAnalyserNUnit;
     using NUnit.Framework;
    
+    /// <summary>
+    /// Tests class
+    /// </summary>
     [TestFixture]
     public class Tests
     {
+        /// <summary>
+        /// GivenSadMessage_WhenAnalyse_ReturnSad method
+        /// </summary>
         [Test]
         public void GivenSadMessage_WhenAnalyse_ReturnSad()
         {
@@ -13,6 +26,9 @@ namespace Testing
             Assert.Pass(mood.AnalyseMood(), "Sad");
         }
 
+        /// <summary>
+        /// GivenAnyMessage_WhenAnalyse_ReturnHappy method
+        /// </summary>
         [Test]
         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
         {
