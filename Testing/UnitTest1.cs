@@ -46,6 +46,9 @@ namespace Testing
             Assert.AreEqual(mood.AnalyseMood(), "Empty Mood");
         }
 
+        /// <summary>
+        /// GivenNullMood_ShouldThrow_NullMood method
+        /// </summary>
         [Test]
         public void GivenNullMood_ShouldThrow_NullMood()
         {
