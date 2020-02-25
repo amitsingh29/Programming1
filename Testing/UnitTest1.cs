@@ -36,6 +36,9 @@ namespace Testing
             Assert.Pass(mood.AnalyseMood(), "Happy");
         }
 
+        /// <summary>
+        /// GivenEmptyMood_ShouldThrow_EmptyMood method
+        /// </summary>
         [Test]
         public void GivenEmptyMood_ShouldThrow_EmptyMood()
         {
