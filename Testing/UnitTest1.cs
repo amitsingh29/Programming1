@@ -1,7 +1,8 @@
-using NUnit.Framework;
-using MoodAnalyserNUnit;
 namespace Testing
 {
+    using MoodAnalyserNUnit;
+    using NUnit.Framework;
+   
     [TestFixture]
     public class Tests
     {
