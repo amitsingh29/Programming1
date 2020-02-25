@@ -56,6 +56,9 @@ namespace Testing
             Assert.AreEqual(mood.AnalyseMood(), "Null Mood");
         }
 
+        /// <summary>
+        /// GivenMoodAnalyserClassName_ShouldReturn_MoodAnalyserObject method
+        /// </summary>
         [Test]
         public void GivenMoodAnalyserClassName_ShouldReturn_MoodAnalyserObject()
         {
