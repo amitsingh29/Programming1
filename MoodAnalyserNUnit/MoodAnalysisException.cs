@@ -9,7 +9,7 @@ namespace MoodAnalyserNUnit
         public string message;
         public enum Exception_Type
         {
-             Empty , Null
+             Empty , Null , NoSuchClass
         }
         public Exception_Type type;
         public MoodAnalysisException(Exception_Type type , string message)

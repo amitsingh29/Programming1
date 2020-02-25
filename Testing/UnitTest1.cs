@@ -32,5 +32,12 @@ namespace Testing
             MoodAnalyser mood = new MoodAnalyser(null);
             Assert.AreEqual(mood.AnalyseMood(), "Null Mood");
         }
+
+        [Test]
+        public void GivenMoodAnalyserClassName_ShouldReturn_MoodAnalyserObject()
+        {
+            MoodAnalyser mood = new MoodAnalyser();
+            Assert.IsTrue(mood.Equals(mood));
+        }
     }
-    }
+}
