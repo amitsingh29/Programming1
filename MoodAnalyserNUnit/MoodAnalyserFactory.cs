@@ -17,27 +17,20 @@ namespace MoodAnalyserNUnit
     /// </summary>
     public class MoodAnalyserFactory
     {
-       
-        /// <summary>
-        /// default constructor
-        /// </summary>
-        public MoodAnalyserFactory()
-        {
-        }
-
+  
         /// <summary>
         /// MoodAnalyser method
         /// </summary>
         /// <param name="className">string parameter</param>
         /// <returns>object type</returns>
-        public static object MoodAnalyser(string className)
+        public static object MoodAnalyser(string className, params object[] p)
         {
-            Type type = Type.GetType("MoodAnalyserNUnit." + className);
             try
             {
+                Type type = Type.GetType("MoodAnalyserNUnit." + className);
                 if (type != null)
                 {
-                   object obj = Activator.CreateInstance(type);
+                   object obj = Activator.CreateInstance(type, p);
                     return obj;
                 }
 

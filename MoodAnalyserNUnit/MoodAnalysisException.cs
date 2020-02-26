@@ -44,7 +44,9 @@ namespace MoodAnalyserNUnit
             /// <summary>
             /// NoSuchClass Exception_Type
             /// </summary>
-            NoSuchClass
+            NoSuchClass,
+
+            NoSuchMethod
         }
 
         /// <summary>
