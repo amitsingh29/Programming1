@@ -17,6 +17,7 @@ namespace MoodAnalyserNUnit
     /// </summary>
     public class MoodAnalyserFactory
     {
+       
         /// <summary>
         /// default constructor
         /// </summary>

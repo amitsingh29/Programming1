@@ -20,7 +20,7 @@ namespace MoodAnalyserNUnit
         /// <summary>
         /// string instance variable
         /// </summary>
-        public string message;
+        public string message = "I'm in sad mood";
 
         /// <summary>
         /// MoodAnalyser default constructor
@@ -46,11 +46,6 @@ namespace MoodAnalyserNUnit
         {
             try
             {
-                if (this.message == "I'm in a bad mood")
-                {
-                    return "Sad";
-                }
-
                 if (this.message == string.Empty)
                 {
                     throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Empty, "Empty Mood");
@@ -61,12 +56,22 @@ namespace MoodAnalyserNUnit
                     throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Null, "Null Mood");
                 }
 
-                return "Happy";
+                if (message.Length < 3)
+                {
+                    throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchClass, "Plz Enter length of argument more than and equal to 3 ");
+                }
+
+                if (message.Contains("Sad"))
+                {
+                    return "Sad";
+                }
             }
+
             catch (MoodAnalysisException exception)
             {
                 return exception.Message;
             }
+                return "Happy";
         }
         /// <summary>
         /// Equals method
@@ -75,9 +80,9 @@ namespace MoodAnalyserNUnit
         /// <returns>Boolean value</returns>
         public override bool Equals(Object obj)
         {
-            object mood = MoodAnalyserFactory.MoodAnalyser("MoodAnalyser");
+            MoodAnalyser obj1 = new MoodAnalyser("Amit");
 
-            if (mood.GetType() == obj.GetType())
+            if (obj.GetType() == obj1.GetType())
             {
                 return true;
             }

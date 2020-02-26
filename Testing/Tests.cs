@@ -86,6 +86,12 @@ namespace Testing
             Assert.IsTrue(mood.Equals(mood));
         }
 
+        [Test]
+        public void UsingReflection_ToCreateMoodAnalyser_WithCustomConstructor()
+        {
+            MoodAnalyser mood = new MoodAnalyser();
+            
+        }
        
     }
 }
