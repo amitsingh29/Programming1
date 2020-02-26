@@ -97,6 +97,9 @@ namespace Testing
             Assert.AreEqual("No Such Class", exceptionMessage);
         }
 
+        /// <summary>
+        /// GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood method
+        /// </summary>
         [Test]
         public void GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood()
         {
