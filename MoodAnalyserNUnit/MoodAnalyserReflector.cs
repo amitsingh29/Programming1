@@ -42,6 +42,11 @@ namespace MoodAnalyserNUnit
             } 
         }
 
+        /// <summary>
+        /// WrongMethod method
+        /// </summary>
+        /// <param name="methodName">string parameter</param>
+        /// <returns>string type</returns>
         public static string WrongMethod(string methodName)
         {
             MoodAnalyser moodAnalyser = (MoodAnalyser)MoodAnalyserReflector.MoodAnalyser("MoodAnalyser", "Happy");
