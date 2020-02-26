@@ -30,8 +30,8 @@ namespace MoodAnalyserNUnit
                 Type type = Type.GetType("MoodAnalyserNUnit." + className);
                 if (type != null)
                 {
-                   object obj = Activator.CreateInstance(type, p);
-                    return obj;
+                    object obj = Activator.CreateInstance(type, p);
+                   return obj;
                 }
 
                 throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchClass, "No Such Class");

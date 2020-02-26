@@ -87,10 +87,11 @@ namespace Testing
         }
 
         [Test]
-        public void UsingReflection_ToCreateMoodAnalyser_WithCustomConstructor()
+        public void GivenClassNameImproperThroughConstructor_WhenAnalyse_ReturnMoodAnalysisException()
         {
             MoodAnalyser mood = new MoodAnalyser();
-            
+            string exceptionMessage = MoodAnalyserFactory.MoodAnalyser("Bridge").ToString();
+            Assert.AreEqual("No Such Class", exceptionMessage);
         }
        
     }
