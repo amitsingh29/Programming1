@@ -77,7 +77,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenMoodAnalyserProperThroughConstructor_WhenAnalyse_ReturnMoodAnalyserObject()
+        /// GivenMoodAnalyserProperThroughConstructor_WhenAnalyse_ReturnMoodAnalyserObject method
         /// </summary>
         [Test]
         public void GivenMoodAnalyserProperThroughConstructor_WhenAnalyse_ReturnMoodAnalyserObject()
@@ -86,6 +86,9 @@ namespace Testing
             Assert.IsTrue(mood.Equals(mood));
         }
 
+        /// <summary>
+        /// GivenClassNameImproperThroughConstructor_WhenAnalyse_ReturnMoodAnalysisException method
+        /// </summary>
         [Test]
         public void GivenClassNameImproperThroughConstructor_WhenAnalyse_ReturnMoodAnalysisException()
         {
