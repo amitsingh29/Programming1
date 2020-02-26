@@ -15,7 +15,7 @@ namespace MoodAnalyserNUnit
     /// <summary>
     ///  MoodAnalyserFactory class
     /// </summary>
-    public class MoodAnalyserFactory
+    public class MoodAnalyserReflector
     {
   
         /// <summary>

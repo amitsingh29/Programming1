@@ -72,7 +72,7 @@ namespace Testing
         [Test]
         public void GivenClassName_WhenImproper_ThrowMoodAnalysisException()
         {
-            string ExceptionMessage = MoodAnalyserFactory.MoodAnalyser("Amit").ToString();
+            string ExceptionMessage = MoodAnalyserReflector.MoodAnalyser("Amit").ToString();
             Assert.AreEqual("No Such Class", ExceptionMessage);
         }
 
@@ -93,9 +93,16 @@ namespace Testing
         public void GivenClassNameImproperThroughConstructor_WhenAnalyse_ReturnMoodAnalysisException()
         {
             MoodAnalyser mood = new MoodAnalyser();
-            string exceptionMessage = MoodAnalyserFactory.MoodAnalyser("Bridge").ToString();
+            string exceptionMessage = MoodAnalyserReflector.MoodAnalyser("Bridge").ToString();
             Assert.AreEqual("No Such Class", exceptionMessage);
         }
-       
+
+        [Test]
+        public void GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood()
+        {
+            MoodAnalyser mood = (MoodAnalyser)MoodAnalyserReflector.MoodAnalyser("MoodAnalyser", "Happy");
+            string actual = mood.GetType().GetMethod("AnalyseMood").Invoke(mood, null).ToString();
+            Assert.AreEqual("Happy", actual);
+        }
     }
 }
