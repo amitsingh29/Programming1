@@ -104,7 +104,7 @@ namespace Testing
         public void GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood()
         {
             MoodAnalyser mood = (MoodAnalyser)MoodAnalyserReflector.MoodAnalyser("MoodAnalyser", "Happy");
-            string actual = mood.GetType().GetMethod("AnalyseMood").Invoke(mood, null).ToString();
+            string actual = mood.GetType().GetMethod("Amit").Invoke(mood, null).ToString();
             Assert.AreEqual("Happy", actual);
         }
     }

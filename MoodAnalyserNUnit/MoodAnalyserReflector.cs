@@ -41,5 +41,24 @@ namespace MoodAnalyserNUnit
                 return exception.Message;
             } 
         }
+
+        public static string WrongMethod(string methodName)
+        {
+            MoodAnalyser moodAnalyser = (MoodAnalyser)MoodAnalyserReflector.MoodAnalyser("MoodAnalyser", "Happy");
+            MethodInfo methodInfo = moodAnalyser.GetType().GetMethod(methodName);
+            try
+            {
+                if (methodInfo == null)
+                {
+                    throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchMethod, "No Such Method");
+                }
+
+                return methodName;
+            }
+            catch (MoodAnalysisException ex)
+            {
+                return ex.Message;
+            }
+        }
     }
 }
