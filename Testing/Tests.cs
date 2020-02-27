@@ -17,7 +17,7 @@ namespace Testing
     public class Tests
     {
         /// <summary>
-        /// GivenSadMessage_WhenAnalyse_ReturnSad method
+        /// Given the sad message when analyze return sad.
         /// </summary>
         [Test]
         public void GivenSadMessage_WhenAnalyse_ReturnSad()
@@ -27,7 +27,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenAnyMessage_WhenAnalyse_ReturnHappy method
+        /// Given any message when analyze return happy.
         /// </summary>
         [Test]
         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
@@ -37,7 +37,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenEmptyMood_ShouldThrow_EmptyMood method
+        ///  Given the empty message when analyze return empty
         /// </summary>
         [Test]
         public void GivenEmptyMood_ShouldThrow_EmptyMood()
@@ -47,7 +47,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenNullMood_ShouldThrow_NullMood method
+        ///  Given the null message when analyze return null.
         /// </summary>
         [Test]
         public void GivenNullMood_ShouldThrow_NullMood()
@@ -57,7 +57,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenMoodAnalyserClassName_ShouldReturn_MoodAnalyserObject method
+        ///  Given the null message when analyze return null.
         /// </summary>
         [Test]
         public void GivenMoodAnalyserClassName_ShouldReturn_MoodAnalyserObject()
@@ -67,7 +67,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenClassName_WhenImproper_ThrowMoodAnalysisException method
+        ///  Given the class name improper when analyze return mood analysis exception
         /// </summary>
         [Test]
         public void GivenClassName_WhenImproper_ThrowMoodAnalysisException()
@@ -77,7 +77,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenMoodAnalyserProperThroughConstructor_WhenAnalyse_ReturnMoodAnalyserObject method
+        /// Given the mood analyzer proper through constructor when analyze return mood analyzer object.
         /// </summary>
         [Test]
         public void GivenMoodAnalyserProperThroughConstructor_WhenAnalyse_ReturnMoodAnalyserObject()
@@ -87,7 +87,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenClassNameImproperThroughConstructor_WhenAnalyse_ReturnMoodAnalysisException method
+        ///  Given the class name improper through constructor when analyze return mood analysis exception.
         /// </summary>
         [Test]
         public void GivenClassNameImproperThroughConstructor_WhenAnalyse_ReturnMoodAnalysisException()
@@ -98,7 +98,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood method
+        /// Given the happy message using reflection when analyze return happy mood.
         /// </summary>
         [Test]
         public void GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood()
@@ -109,7 +109,7 @@ namespace Testing
         }
 
         /// <summary>
-        /// 
+        /// Given the happy message when improper method when analyze return mood analysis exception.
         /// </summary>
         [Test]
         public void GivenHappyMessageWhenImproperMethod_WhenAnalyse_ThrowMoodAnalysisException()
@@ -121,6 +121,9 @@ namespace Testing
             Assert.AreEqual("No Such Method", actual);
         }
 
+        /// <summary>
+        /// Set the happy message with reflector when analyze return happy.
+        /// </summary>
         [Test]
         public void SetHappyMessageWithReflector_WhenAnalyse_ReturnHappy()
         {
@@ -132,6 +135,9 @@ namespace Testing
             Assert.AreEqual("Happy", actual);
         }
 
+        /// <summary>
+        /// Set the improper field with message when analyze return mood analysis exception.
+        /// </summary>
         [Test]
         public void SetValueOnImproperField_WhenAnalyse_ThrowMoodAnalysisException()
         {
@@ -143,8 +149,10 @@ namespace Testing
             Assert.AreEqual("No Such Field", actual);
         }
 
+        /// <summary>
+        /// Set the null message with reflector when analyze return mood analysis exception.
+        /// </summary>
         [Test]
-
         public void SetNullMessageWithReflector_WhenAnalyse_ReturnMoodAnalysisException()
         {
             MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");

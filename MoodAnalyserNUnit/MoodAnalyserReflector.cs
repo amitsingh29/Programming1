@@ -96,7 +96,7 @@ namespace MoodAnalyserNUnit
         }
 
         /// <summary>
-        /// 
+        ///  set's the field 
         /// </summary>
         /// <param name="message"></param>
         /// <param name="fieldName"></param>
