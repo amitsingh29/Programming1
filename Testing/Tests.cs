@@ -114,11 +114,11 @@ namespace Testing
         [Test]
         public void GivenHappyMessageWhenImproperMethod_WhenAnalyse_ThrowMoodAnalysisException()
         {
-            MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.CreateObject("MoodAnalyserReflector");
+            MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
             string[] parameters = new string[1];
-            parameters[0] = "analyseMood";
-            string actual = moodAnalyserReflector.GetType().GetMethod("MethodCheck").Invoke(moodAnalyserReflector, parameters).ToString();
-            Assert.AreEqual("No Such Method Error", actual);
+            parameters[0] = "No Such Method";
+            string actual = moodAnalyserReflector.GetType().GetMethod("WrongMethod").Invoke(moodAnalyserReflector, parameters).ToString();
+            Assert.AreEqual("No Such Method", actual);
         }
 
     }
