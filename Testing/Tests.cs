@@ -104,8 +104,22 @@ namespace Testing
         public void GivenHappyMessageUsingReflection_WhenAnalyse_ReturnHappyMood()
         {
             MoodAnalyser mood = (MoodAnalyser)MoodAnalyserReflector.MoodAnalyser("MoodAnalyser", "Happy");
-            string actual = mood.GetType().GetMethod("Amit").Invoke(mood, null).ToString();
+            string actual = mood.GetType().GetMethod("AnalyseMood").Invoke(mood, null).ToString();
             Assert.AreEqual("Happy", actual);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Test]
+        public void GivenHappyMessageWhenImproperMethod_WhenAnalyse_ThrowMoodAnalysisException()
+        {
+            MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.CreateObject("MoodAnalyserReflector");
+            string[] parameters = new string[1];
+            parameters[0] = "analyseMood";
+            string actual = moodAnalyserReflector.GetType().GetMethod("MethodCheck").Invoke(moodAnalyserReflector, parameters).ToString();
+            Assert.AreEqual("No Such Method Error", actual);
+        }
+
     }
 }
