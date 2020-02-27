@@ -121,5 +121,16 @@ namespace Testing
             Assert.AreEqual("No Such Method", actual);
         }
 
+        [Test]
+        public void SetHappyMessageWithReflector_WhenAnalyse_ReturnHappy()
+        {
+            MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
+            string[] parameters = new string[2];
+            parameters[0] = "check";
+            parameters[1] = "Happy";
+            string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
+            Assert.AreEqual("Happy", actual);
+        }
+
     }
 }

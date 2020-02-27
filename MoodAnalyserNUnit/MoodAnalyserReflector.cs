@@ -18,6 +18,11 @@ namespace MoodAnalyserNUnit
     public class MoodAnalyserReflector
     {
         /// <summary>
+        /// static check variable
+        /// </summary>
+        public static string check;
+
+        /// <summary>
         /// CreateObject method with single parameter
         /// </summary>
         /// <param name="classNames"></param>
@@ -83,6 +88,36 @@ namespace MoodAnalyserNUnit
                 }
 
                 return methodName;
+            }
+            catch (MoodAnalysisException ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="fieldName"></param>
+        /// <returns></returns>
+        public string SetField (string message, string fieldName)
+        {
+            try
+            {
+                if (fieldName == "check")
+                {
+                    check = message;
+                    if (message == null)
+                    {
+                        throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Null, "Null");
+                    }
+
+                    FieldInfo fieldInfo = typeof(MoodAnalyserReflector).GetField("check");
+                    return fieldInfo.GetValue(null).ToString();
+                }
+
+                throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchField, "Happy");
             }
             catch (MoodAnalysisException ex)
             {
