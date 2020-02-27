@@ -17,9 +17,33 @@ namespace MoodAnalyserNUnit
     /// </summary>
     public class MoodAnalyserReflector
     {
-  
         /// <summary>
-        /// MoodAnalyser method
+        /// CreateObject method with single parameter
+        /// </summary>
+        /// <param name="classNames"></param>
+        /// <returns></returns>
+        public static object CreateObject(string classNames)
+        {
+            try
+            {
+                Type type = Type.GetType("MoodAnalyser." + classNames);
+                if (type != null)
+                {
+                    object obj = Activator.CreateInstance(type);
+                    return obj;
+                }
+
+                throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchClass, "No such class");
+            }
+            catch (Exception ex)
+            {
+
+                return ex.Message;
+            }
+        }
+
+        /// <summary>
+        /// MoodAnalyser method with multiple parameters
         /// </summary>
         /// <param name="className">string parameter</param>
         /// <returns>object type</returns>
@@ -43,7 +67,7 @@ namespace MoodAnalyserNUnit
         }
 
         /// <summary>
-        /// WrongMethod method
+        /// Method which checks the name
         /// </summary>
         /// <param name="methodName">string parameter</param>
         /// <returns>string type</returns>
