@@ -126,8 +126,8 @@ namespace Testing
         {
             MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
             string[] parameters = new string[2];
-            parameters[0] = "check";
-            parameters[1] = "Happy";
+            parameters[0] = "Happy";
+            parameters[1] = "check";
             string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
             Assert.AreEqual("Happy", actual);
         }
@@ -137,10 +137,22 @@ namespace Testing
         {
             MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
             string[] parameters = new string[2];
-            parameters[0] = "anything";
-            parameters[1] = "Happy";
+            parameters[0] = "Happy";
+            parameters[1] = "anything";
             string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
             Assert.AreEqual("No Such Field", actual);
+        }
+
+        [Test]
+
+        public void SetNullMessageWithReflector_WhenAnalyse_ReturnMoodAnalysisException()
+        {
+            MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
+            string[] parameters = new string[2];
+            parameters[0] = null;
+            parameters[1] = "check";
+            string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
+            Assert.AreEqual("Null", actual);
         }
     }
 }

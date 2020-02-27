@@ -101,14 +101,14 @@ namespace MoodAnalyserNUnit
         /// <param name="message"></param>
         /// <param name="fieldName"></param>
         /// <returns></returns>
-        public string SetField (string message, string fieldName)
+        public static string SetField(string message, string fieldName)
         {
             try
             {
                 if (fieldName == "check")
                 {
                     check = message;
-                    if (message == null)
+                    if (check == null)
                     {
                         throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Null, "Null");
                     }
