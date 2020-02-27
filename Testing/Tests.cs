@@ -132,5 +132,15 @@ namespace Testing
             Assert.AreEqual("Happy", actual);
         }
 
+        [Test]
+        public void SetValueOnImproperField_WhenAnalyse_ThrowMoodAnalysisException()
+        {
+            MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
+            string[] parameters = new string[2];
+            parameters[0] = "anything";
+            parameters[1] = "Happy";
+            string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
+            Assert.AreEqual("No Such Field", actual);
+        }
     }
 }

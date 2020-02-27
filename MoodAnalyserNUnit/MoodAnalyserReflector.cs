@@ -117,7 +117,7 @@ namespace MoodAnalyserNUnit
                     return fieldInfo.GetValue(null).ToString();
                 }
 
-                throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchField, "Happy");
+                throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchField, "No Such Field");
             }
             catch (MoodAnalysisException ex)
             {
