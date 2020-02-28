@@ -22,7 +22,7 @@ namespace Testing
         [Test]
         public void GivenSadMessage_WhenAnalyse_ReturnSad()
         {
-            MoodAnalyser mood = new MoodAnalyser();
+            MoodAnalyser mood = new MoodAnalyser("I'm in sad mood");
             Assert.Pass(mood.AnalyseMood(), "Sad");
         }
 
@@ -32,7 +32,7 @@ namespace Testing
         [Test]
         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
         {
-            MoodAnalyser mood = new MoodAnalyser();
+            MoodAnalyser mood = new MoodAnalyser("I'm in any mood");
             Assert.Pass(mood.AnalyseMood(), "Happy");
         }
 
