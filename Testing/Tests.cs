@@ -72,8 +72,8 @@ namespace Testing
         [Test]
         public void GivenClassName_WhenImproper_ThrowMoodAnalysisException()
         {
-            string ExceptionMessage = MoodAnalyserReflector.MoodAnalyser("Amit").ToString();
-            Assert.AreEqual("No Such Class", ExceptionMessage);
+            string exceptionMessage = MoodAnalyserReflector.MoodAnalyser("Amit").ToString();
+            Assert.AreEqual("No Such Class", exceptionMessage);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace Testing
             MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
             string[] parameters = new string[2];
             parameters[0] = "Happy";
-            parameters[1] = "check";
+            parameters[1] = "Check";
             string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
             Assert.AreEqual("Happy", actual);
         }
@@ -158,7 +158,7 @@ namespace Testing
             MoodAnalyserReflector moodAnalyserReflector = (MoodAnalyserReflector)MoodAnalyserReflector.MoodAnalyser("MoodAnalyserReflector");
             string[] parameters = new string[2];
             parameters[0] = null;
-            parameters[1] = "check";
+            parameters[1] = "Check";
             string actual = moodAnalyserReflector.GetType().GetMethod("SetField").Invoke(moodAnalyserReflector, parameters).ToString();
             Assert.AreEqual("Null", actual);
         }

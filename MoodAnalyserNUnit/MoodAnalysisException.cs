@@ -27,17 +27,28 @@ namespace MoodAnalyserNUnit
         public Exception_Type Type;
 
         /// <summary>
+        /// custom constructor
+        /// </summary>
+        /// <param name="Type">Exception_Type type</param>
+        /// <param name="message">string message</param>
+        public MoodAnalysisException(Exception_Type type, string message)
+        {
+            this.Type = type;
+            this.message = message;
+        }
+
+        /// <summary>
         /// enum
         /// </summary>
         public enum Exception_Type
         {
             /// <summary>
-            /// Emptymood Exception_Type
+            /// Empty Exception_Type
             /// </summary>
             Empty,
 
             /// <summary>
-            /// NullMood Exception_Type
+            /// Null Exception_Type
             /// </summary>
             Null,
 
@@ -45,7 +56,7 @@ namespace MoodAnalyserNUnit
             /// NoSuchClass Exception_Type
             /// </summary>
             NoSuchClass,
-            
+
             /// <summary>
             /// NoSuchMethod Exception_Type
             /// </summary>
@@ -55,18 +66,6 @@ namespace MoodAnalyserNUnit
             /// NoSuchField Exception_Type
             /// </summary>
             NoSuchField
-        }
-
-        /// <summary>
-        /// custom constructor
-        /// </summary>
-        /// <param name="Type">Exception_Type typ</param>
-        /// <param name="message">string messag</param>
-        public MoodAnalysisException(Exception_Type type, string message)
-        {
-            this.Type = type;
-            this.message = message;
-
         }
 
         /// <summary>

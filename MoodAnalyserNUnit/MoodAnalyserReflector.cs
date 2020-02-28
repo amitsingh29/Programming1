@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="MoodAnalyserFactory.cs" company="BridgeLabz">
+// <copyright file="MoodAnalyserReflector.cs" company="BridgeLabz">
 //     Copyright © 2020
 // </copyright>
 // <creator name="Amit Singh"/>
@@ -20,13 +20,13 @@ namespace MoodAnalyserNUnit
         /// <summary>
         /// static check variable
         /// </summary>
-        public static string check;
+        public static string Check;
 
         /// <summary>
         /// CreateObject method with single parameter
         /// </summary>
-        /// <param name="classNames"></param>
-        /// <returns></returns>
+        /// <param name="classNames">string classNames</param>
+        /// <returns>object</returns>
         public static object CreateObject(string classNames)
         {
             try
@@ -42,7 +42,6 @@ namespace MoodAnalyserNUnit
             }
             catch (Exception ex)
             {
-
                 return ex.Message;
             }
         }
@@ -50,7 +49,7 @@ namespace MoodAnalyserNUnit
         /// <summary>
         /// MoodAnalyser method with multiple parameters
         /// </summary>
-        /// <param name="className">string parameter</param>
+        /// <param name="className">string className, params object[] p</param>
         /// <returns>object type</returns>
         public static object MoodAnalyser(string className, params object[] p)
         {
@@ -98,17 +97,17 @@ namespace MoodAnalyserNUnit
         /// <summary>
         ///  set's the field 
         /// </summary>
-        /// <param name="message"></param>
-        /// <param name="fieldName"></param>
-        /// <returns></returns>
+        /// <param name="message">string message</param>
+        /// <param name="fieldName">string fieldName</param>
+        /// <returns>string value</returns>
         public static string SetField(string message, string fieldName)
         {
             try
             {
                 if (fieldName == "check")
                 {
-                    check = message;
-                    if (check == null)
+                    Check = message;
+                    if (Check == null)
                     {
                         throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Null, "Null");
                     }

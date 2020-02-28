@@ -56,23 +56,24 @@ namespace MoodAnalyserNUnit
                     throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Null, "Null Mood");
                 }
 
-                if (message.Length < 3)
+                if (this.message.Length < 3)
                 {
                     throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.NoSuchClass, "Plz Enter length of argument more than and equal to 3 ");
                 }
 
-                if (message.Contains("Sad"))
+                if (this.message.Contains("Sad"))
                 {
                     return "Sad";
                 }
             }
-
             catch (MoodAnalysisException exception)
             {
                 return exception.Message;
             }
+
                 return "Happy";
         }
+
         /// <summary>
         /// Equals method
         /// </summary>
