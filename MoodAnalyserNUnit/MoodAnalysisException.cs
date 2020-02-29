@@ -19,12 +19,12 @@ namespace MoodAnalyserNUnit
         /// <summary>
         /// string instance variable
         /// </summary>
-        public string message;
+        private string message;
 
         /// <summary>
         /// Exception_Type instance variable
         /// </summary>
-        public Exception_Type Type;
+        private Exception_Type Type;
 
         /// <summary>
         /// custom constructor

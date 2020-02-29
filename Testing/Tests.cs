@@ -22,8 +22,8 @@ namespace Testing
         [Test]
         public void GivenSadMessage_WhenAnalyse_ReturnSad()
         {
-            MoodAnalyser mood = new MoodAnalyser("I'm in sad mood");
-            Assert.Pass(mood.AnalyseMood(), "Sad");
+            MoodAnalyser mood = new MoodAnalyser("I'm in Sad mood");
+            Assert.AreEqual(mood.AnalyseMood(), "Sad");
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Testing
         public void GivenAnyMessage_WhenAnalyse_ReturnHappy()
         {
             MoodAnalyser mood = new MoodAnalyser("I'm in any mood");
-            Assert.Pass(mood.AnalyseMood(), "Happy");
+            Assert.AreEqual(mood.AnalyseMood(), "Happy");
         }
 
         /// <summary>
@@ -63,7 +63,8 @@ namespace Testing
         public void GivenMoodAnalyserClassName_ShouldReturn_MoodAnalyserObject()
         {
             MoodAnalyser mood = new MoodAnalyser();
-            Assert.IsTrue(mood.Equals(mood));
+            bool actual = mood.Equals(mood);
+            Assert.AreEqual(true, actual);
         }
 
         /// <summary>

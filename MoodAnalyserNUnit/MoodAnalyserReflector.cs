@@ -104,7 +104,7 @@ namespace MoodAnalyserNUnit
         {
             try
             {
-                if (fieldName == "check")
+                if (fieldName == "Check")
                 {
                     Check = message;
                     if (Check == null)
@@ -112,7 +112,7 @@ namespace MoodAnalyserNUnit
                         throw new MoodAnalysisException(MoodAnalysisException.Exception_Type.Null, "Null");
                     }
 
-                    FieldInfo fieldInfo = typeof(MoodAnalyserReflector).GetField("check");
+                    FieldInfo fieldInfo = typeof(MoodAnalyserReflector).GetField("Check");
                     return fieldInfo.GetValue(null).ToString();
                 }
 
